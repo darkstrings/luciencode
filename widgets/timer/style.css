@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  color: rgb(200, 78, 34);
+  margin: 0;
+  background-image: url("img/balogovicBg.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  /* media query for phones */
+}
+
+.countdown-container {
+  display: flex;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.big-text {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+.countdown-label {
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,10 @@
+    npm init
+    npm i parcel (for npm packs)
+
+And in package.json:
+
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
