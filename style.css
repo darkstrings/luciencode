@@ -14,7 +14,7 @@ body {
 
 body::after {
   content: "";
-  background-image: url("img//spokes.jpeg");
+  background-image: url("public/img/spokes.jpeg");
   opacity: 0.6;
   top: 0;
   left: 0;
@@ -32,30 +32,64 @@ body::after {
   height: 90vh;
 }
 
-.links__top {
+.topbar {
   display: flex;
+  width: 100%;
+  align-items: end;
+}
+
+.name {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+}
+
+.links__top__right {
+  display: flex;
+  width: 50vw;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 .menu {
   display: flex;
-  flex-basis: auto;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: 8rem;
+  font-size: 7vw;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-right: 1rem;
+  height: 80vh;
 }
 .copyright {
   display: flex;
   max-height: fit-content;
   padding-left: 1rem;
   align-items: end;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    justify-content: start;
+    padding-top: 6rem;
+  }
+  .topbar {
+    opacity: 0.8;
+  }
+  .copyright {
+    opacity: 0.8;
+  }
 }
