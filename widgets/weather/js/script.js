@@ -7,6 +7,7 @@ const windDisplay = document.querySelector(".wind");
 const searchBtn = document.querySelector(".search button");
 const searchInput = document.querySelector(".search-bar");
 const icon = document.querySelector(".icon");
+import { WEATHER_API_KEY } from "./wxApiKey.js";
 
 searchBtn.addEventListener("click", function () {
   const city = searchInput.value;
@@ -20,8 +21,6 @@ searchInput.addEventListener("keyup", function (e) {
   }
 });
 
-const apiKey = "4001d5371c98e55c06f10772784952d6";
-
 function degreesToCompass(deg) {
   const directions = ["North", "Northeast", "East", "Southeast", "South", "Southwest", "West", "Northwest"];
   let degrees = (deg * 8) / 360;
@@ -31,7 +30,7 @@ function degreesToCompass(deg) {
 }
 
 async function getWeather(city) {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`);
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=imperial`);
 
   const data = await response.json();
 
