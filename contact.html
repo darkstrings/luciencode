@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h3>Contact us</h3>
-    <form class="form" method="post" netlify>
-        <label for="Name" class="form_label">Your name</label>
-        <div class="input_group">
-            <input type="text" id="name" name="name" class="form_control" required>
-        </div>
-        <div class=form_group">
-            <label for="email" class="form_label">Your email address</label>
-            <div class="input_group">
-                <input type="email" id="email" name="email" class="form_control" required>
-            </div>
-            <div class=form_group">
-                <label for="message" class="form_label">Your Message</label>
-                <div class="input_group">
-                    <textarea id="message" name="message" class="form_control" rows="6" maxlength="3000"
-                        required></textarea>
-                </div>
-            </div>
-            <div class=form_group">
-                <button type="submit" class="form_button">Send</button>
-            </div>
-</body>
-
-</html>
+<form name="contact" method="POST" netlify>
+    <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+        <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+            </select></label>
+    </p>
+    <p>
+        <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
