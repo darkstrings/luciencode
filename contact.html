@@ -9,26 +9,25 @@
 
 <body>
     <h3>Contact us</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        <label for="Name" class="fcf-label">Your name</label>
-        <div class="fcf-input-group">
-            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+    <form name="email_form" class="form" method="post" netlify>
+        <label for="Name" class="form_label">Your name</label>
+        <div class="input_group">
+            <input type="text" id="name" name="name" class="form_control" required>
         </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        <div class=form_group">
+            <label for="email" class="form_label">Your email address</label>
+            <div class="input_group">
+                <input type="email" id="email" name="email" class="form_control" required>
             </div>
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+            <div class=form_group">
+                <label for="message" class="form_label">Your Message</label>
+                <div class="input_group">
+                    <textarea id="message" name="message" class="form_control" rows="6" maxlength="3000"
                         required></textarea>
                 </div>
             </div>
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button"
-                    class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            <div class=form_group">
+                <button type="submit" class="form_button">Send</button>
             </div>
 </body>
 
