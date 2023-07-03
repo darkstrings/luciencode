@@ -2,9 +2,10 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0.3rem;
+  padding: 0.3rem 0.3rem 0 0.3rem;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Orbit", sans-serif;
   background-color: rgb(0, 0, 0);
@@ -12,9 +13,14 @@ body {
   color: red;
 }
 
+a:visited {
+  color: red;
+}
+
 body::after {
   content: "";
   background-image: url("public/img/spokes.jpeg");
+
   opacity: 0.6;
   top: 0;
   left: 0;
@@ -32,10 +38,14 @@ body::after {
   height: 90vh;
 }
 
-.topbar {
+.top__bar {
   display: flex;
   width: 100%;
   align-items: end;
+}
+.bottom__bar {
+  display: flex;
+  width: 100%;
 }
 
 .name {
@@ -51,6 +61,36 @@ body::after {
   align-items: center;
 }
 
+.home {
+  display: flex;
+  height: 1rem;
+  padding-bottom: 3rem;
+  width: 50vw;
+  justify-content: end;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+.copyright {
+  display: flex;
+  height: 1rem;
+  padding-bottom: 3rem;
+  width: 50vw;
+  padding-bottom: 2rem;
+}
+
+.about {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: fit-content;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -64,13 +104,7 @@ body::after {
   flex-direction: column;
   justify-content: center;
   padding-right: 1rem;
-  height: 80vh;
-}
-.copyright {
-  display: flex;
-  max-height: fit-content;
-  padding-left: 1rem;
-  align-items: end;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -86,10 +120,26 @@ body::after {
     justify-content: start;
     padding-top: 6rem;
   }
-  .topbar {
+  .top__bar {
     opacity: 0.8;
   }
   .copyright {
     opacity: 0.8;
   }
+  .home {
+    opacity: 0.8;
+  }
+  .menu {
+    opacity: 0.8;
+  }
+}
+
+.link:hover {
+  filter: drop-shadow(0 1px 3px);
+  cursor: pointer;
+  color: red;
+}
+
+.image-blur-edge {
+  filter: drop-shadow(1rem 1rem 1rem #000000);
 }
