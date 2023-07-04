@@ -13,6 +13,12 @@ body {
   color: red;
 }
 
+button {
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+}
+
 a:visited {
   color: red;
 }
@@ -70,6 +76,7 @@ body::after {
   padding-bottom: 2rem;
   cursor: pointer;
 }
+
 .copyright {
   display: flex;
   height: 1rem;
@@ -78,10 +85,43 @@ body::after {
   padding-bottom: 2rem;
 }
 
+/* Contact form */
+
+.contact_form {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 40vw;
+}
+.input {
+  padding-top: 0.75rem;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  color: red;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input:focus {
+  background-color: antiquewhite;
+}
+
+/* About me content */
+
 .about {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* work */
 
 .works {
   display: flex;
@@ -91,6 +131,8 @@ body::after {
   width: fit-content;
 }
 
+/* Main left menu */
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -99,12 +141,24 @@ body::after {
   font-size: 7vw;
 }
 
+/* Box where content appears */
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 1rem;
   font-size: 1.5rem;
+}
+
+.link:hover {
+  filter: drop-shadow(0 1px 3px);
+  cursor: pointer;
+  color: red;
+}
+
+.image-blur-edge {
+  filter: drop-shadow(1rem 1rem 1rem #000000);
 }
 
 @media screen and (max-width: 800px) {
@@ -132,14 +186,4 @@ body::after {
   .menu {
     opacity: 0.8;
   }
-}
-
-.link:hover {
-  filter: drop-shadow(0 1px 3px);
-  cursor: pointer;
-  color: red;
-}
-
-.image-blur-edge {
-  filter: drop-shadow(1rem 1rem 1rem #000000);
 }
