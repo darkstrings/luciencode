@@ -36,22 +36,27 @@ body::after {
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 100vh;
 }
 
 .main {
   display: grid;
   grid-template-columns: 40vw 55vw;
-  height: 90vh;
+  height: 85vh;
 }
 
 .top__bar {
   display: flex;
   width: 100%;
   align-items: end;
+  height: 5vh;
 }
+
 .bottom__bar {
   display: flex;
   width: 100%;
+  align-items: end;
+  height: 5vh;
 }
 
 .name {
@@ -69,49 +74,53 @@ body::after {
 
 .home {
   display: flex;
-  height: 1rem;
-  padding-bottom: 3rem;
   width: 50vw;
-  justify-content: end;
-  padding-bottom: 2rem;
-  cursor: pointer;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .copyright {
   display: flex;
-  height: 1rem;
-  padding-bottom: 3rem;
   width: 50vw;
-  padding-bottom: 2rem;
+  align-items: center;
 }
 
 /* Contact form */
 
-.contact_form {
+.contact {
   display: flex;
-  align-items: center;
-  height: 40vh;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 40vw;
+  align-items: center;
+  justify-content: center;
 }
 .input {
-  padding-top: 0.75rem;
-  box-sizing: border-box;
-  border: 2px solid red;
+  border: 1px solid red;
   border-radius: 4px;
   color: red;
-  height: fit-content;
   padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(66, 66, 63);
+  width: 100%;
 }
 
+/* Contact Submit Button DIV */
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
-.input:focus {
-  background-color: antiquewhite;
+/* Contact Submit Button */
+
+.submit_btn {
+  border-radius: 4px;
+  font-family: inherit;
+  color: red;
+  border-width: 1px;
+  border-color: red;
+  background-color: rgb(66, 66, 63);
+  padding: 0.5rem;
 }
 
 /* About me content */
@@ -119,9 +128,10 @@ body::after {
 .about {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
 }
 
-/* work */
+/* works */
 
 .works {
   display: flex;
@@ -176,14 +186,20 @@ body::after {
   }
   .top__bar {
     opacity: 0.8;
+    font-size: 0.8rem;
   }
-  .copyright {
+  .bottom__bar {
     opacity: 0.8;
-  }
-  .home {
-    opacity: 0.8;
+    font-size: 0.8rem;
   }
   .menu {
     opacity: 0.8;
   }
+  .contact {
+    height: 70vh;
+  }
+}
+
+.hidden {
+  display: none;
 }

@@ -3,22 +3,27 @@ const worksLink = document.getElementById("works");
 const contactLink = document.getElementById("contact");
 const homeLink = document.querySelector(".home");
 const contentDisplay = document.querySelector(".content");
+const contactDisplay = document.querySelector(".contact");
 
 import { worksMenu } from "./content.js";
 import { aboutText } from "./content.js";
 import { splashPic } from "./content.js";
-import { contactText } from "./content.js";
 
 aboutLink.addEventListener("click", () => {
   contentDisplay.innerHTML = aboutText;
+  contentDisplay.classList.remove("hidden");
+  contactDisplay.classList.add("hidden");
 });
 
 worksLink.addEventListener("click", () => {
   contentDisplay.innerHTML = worksMenu;
+  contentDisplay.classList.remove("hidden");
+  contactDisplay.classList.add("hidden");
 });
 
 contactLink.addEventListener("click", () => {
-  contentDisplay.innerHTML = contactText;
+  contentDisplay.classList.add("hidden");
+  contactDisplay.classList.remove("hidden");
 });
 
 addEventListener("load", () => {
@@ -27,4 +32,6 @@ addEventListener("load", () => {
 
 homeLink.addEventListener("click", () => {
   contentDisplay.innerHTML = splashPic;
+  contentDisplay.classList.remove("hidden");
+  contactDisplay.classList.add("hidden");
 });
