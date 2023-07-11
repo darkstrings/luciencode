@@ -12,6 +12,9 @@ body {
   margin: 0;
   color: red;
 }
+p {
+  font-family: "Orbit", sans-serif;
+}
 
 button {
   cursor: pointer;
@@ -19,8 +22,13 @@ button {
   align-self: center;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 a:visited {
   color: red;
+  text-decoration: none;
 }
 
 body::after {
@@ -39,6 +47,15 @@ body::after {
   max-height: 100vh;
 }
 
+.small_link:hover {
+  border-bottom: 1px solid black;
+}
+
+.link:hover {
+  filter: drop-shadow(0 1px 3px);
+  cursor: pointer;
+  color: red;
+}
 .main {
   display: grid;
   grid-template-columns: 40vw 55vw;
@@ -165,12 +182,6 @@ body::after {
   font-size: 1.5rem;
 }
 
-.link:hover {
-  filter: drop-shadow(0 1px 3px);
-  cursor: pointer;
-  color: red;
-}
-
 .image-blur-edge {
   filter: drop-shadow(1rem 1rem 1rem #000000);
 }
@@ -206,4 +217,99 @@ body::after {
 
 .hidden {
   display: none;
+}
+
+/* Link Effect */
+.link_glitch {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.link_glitch:before,
+.link_glitch:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  right: 4;
+}
+
+.link_glitch:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+  64% {
+    transform: translate(9px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.link_glitch:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2% {
+    transform: translate(-22px, 2px) skew(21deg);
+  }
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 2px) skew(21deg);
+  }
+}
+
+/* -----------------------FADE IN CONTENT------------ */
+
+.fade_in {
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
