@@ -12,9 +12,6 @@ body {
   margin: 0;
   color: red;
 }
-p {
-  font-family: "Orbit", sans-serif;
-}
 
 button {
   cursor: pointer;
@@ -34,7 +31,6 @@ a:visited {
 body::after {
   content: "";
   background-image: url("public/img/spokes.jpeg");
-
   opacity: 0.6;
   top: 0;
   left: 0;
@@ -45,6 +41,10 @@ body::after {
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 100vh;
+}
+
+.text_space {
+  padding-bottom: 0.5rem;
 }
 
 .small_link:hover {
@@ -210,6 +210,9 @@ body::after {
   }
   .about {
     font-size: 0.9rem;
+  }
+  .works {
+    font-size: 0.8rem;
   }
 }
 
