@@ -197,21 +197,19 @@ body::after {
   }
   .content {
     justify-content: start;
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
   .top__bar {
-    opacity: 0.8;
     font-size: 0.8rem;
   }
   .bottom__bar {
-    opacity: 0.8;
     font-size: 0.8rem;
-  }
-  .menu {
-    opacity: 0.8;
   }
   .contact {
     height: 70vh;
+  }
+  .about {
+    font-size: 0.9rem;
   }
 }
 
@@ -242,8 +240,10 @@ body::after {
 .link_glitch:after {
   content: attr(title);
   position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  right: 4;
+  right: 4px;
 }
 
 .link_glitch:before {
