@@ -1,5 +1,5 @@
 export const worksMenu = `<div class="works fade_in">
-<p class="text_space"> Below, you'll find some projects I have ready to show. Coming soon will be a banking simulator app in Javascript and a personal microblog based on MongoDB to post little updates as I go instead of updating a file each time. I have also started learning React so there will be projects using that here soon as well. Also on my list of languages to get current and refreshed on are MySQL and PHP. Stay tuned.</p>
+<p class="text_space"> Below, you'll find some projects I have ready to show. Coming soon will be a microblog based on MongoDB to post little updates as I go instead of updating a file each time. I have also started learning React so there will be projects using that here soon as well. Also on my list of languages to get current and refreshed on are MySQL and PHP. Stay tuned.</p>
 
 <ul>
 <li><a href="https://luciencode-gig-tracker.netlify.app" class="link small_link" target="blank">Gig Tracker (Newest!)</a></li>
