@@ -12,6 +12,20 @@ body {
   margin: 0;
   color: red;
 }
+body::after {
+  content: "";
+  background-image: url("public/img/spokes.jpeg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
 
 button {
   cursor: pointer;
@@ -26,21 +40,6 @@ a:link {
 a:visited {
   color: red;
   text-decoration: none;
-}
-
-body::after {
-  content: "";
-  background-image: url("public/img/spokes.jpeg");
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-height: 100vh;
 }
 
 .text_space {
