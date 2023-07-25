@@ -5,7 +5,7 @@ export const worksMenu = `<div class="works fade_in">
 <li><a href="https://luciencode-gig-tracker.netlify.app" class="link small_link" target="blank">Gig Tracker (Newest!)</a></li>
 <li><a href="https://luciencode-quiz.netlify.app/" class="link small_link" target="blank">Quiz</a></li>
 <li><a href="https://luciencode-note-widget.netlify.app/" class="link small_link" target="blank">Note taking app that stores notes in local storage</a></li>
-<li><a href="https://luciencodeweather.netlify.app" class="link small_link" target="blank">Weather app with alerts and advisory</a></li>
+<li><a href="https://luciencodeweather.netlify.app" class="link small_link" target="blank">Weather app with alerts and advisories</a></li>
 <li><a href="https://luciencode-password-widget.netlify.app" class="link small_link" target="blank">Password Generator</a></li>
 <li><a href="https://luciencode-halloween-timer.netlify.app" class="link small_link" target="blank">The time left until Halloween</a></li></ul></div>`;
 
