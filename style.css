@@ -117,6 +117,7 @@ li {
 /* Contact form */
 
 .contact {
+  font-size: 1.5rem;
   display: flex;
   background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
@@ -145,18 +146,19 @@ li {
 
 .submit_btn {
   border-radius: 4px;
-  font-family: inherit;
   color: red;
   border-width: 1px;
   border-color: red;
   background-color: rgb(66, 66, 63);
   padding: 0.5rem;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 /* About me content */
 
 .about {
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
 }
@@ -170,7 +172,10 @@ li {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   padding-bottom: 1.5rem;
-  /* width: fit-content; */
+}
+
+.works-top {
+  margin-bottom: 1.5rem;
 }
 
 /* Main left menu */
