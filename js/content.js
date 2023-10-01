@@ -24,7 +24,7 @@ export const worksMenu = `<div class="works fade_in">
 
 <li><a href="https://luciencode-halloween-timer.netlify.app" class="link small_link" target="blank">The time left until Halloween</a></li></ul></div>`;
 
-export const aboutText = `<div class="about fade_in"><p class="text_space">Hello!</p><p class="text_space">I'm Lucien.</p> <p class="text_space">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
+export const aboutText = `<div class="about fade_in"><p class="text_space">Hello!</p><p class="text_space">My name is Lucien.</p> <p class="text_space">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
 
 <p class="text_space">I have most recently been a guitar technician in the retail world for the past eight years (which has kept my problem solving sharp) but I have decided to commit to returning to web coding.</p>
 
