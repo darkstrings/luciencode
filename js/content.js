@@ -7,9 +7,10 @@ export const worksMenu = `<div class="works fade_in">
 <h2>Newest Examples</h2>
 
 <ul>
-<li><a href="https://luciencode-salesdashboard.netlify.app" class="link small_link" target="blank">Sales Dashboard. My first app made in React and a little bit of bootstrap as I continue to improve. It calculates an hourly wage, commission rate, the number of hours worked and calculates totals. You can also add sales objects that add to your total via the commission rate while also calculating the amount of the commission if you had to share the spoils with another salesperson.</a></li>
+<li><a href="https://luciencode-salesdashboard.netlify.app" class="link small_link" target="blank">Sales Dashboard: <strong>(Now with useReducer!)</strong>
+My first app made in React and a little bit of bootstrap as I continue to improve. It calculates an hourly wage, commission rate, the number of hours worked and calculates totals. You can also add sales objects that add to your total via the commission rate while also calculating the amount of the commission if you had to share the spoils with another salesperson.</a></li>
 
-<li><a href="https://luciencode-gig-tracker.netlify.app" class="link small_link" target="blank">Gig Tracker. An app that musicians can use to document their performances.</a></li>
+<li><a href="https://luciencode-gig-tracker.netlify.app" class="link small_link" target="blank">Gig Tracker: An app that musicians can use to document their performances.</a></li>
 </ul>
 
 <h2>Earlier Examples</h2>
