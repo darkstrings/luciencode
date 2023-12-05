@@ -1,8 +1,8 @@
 export const worksMenu = `<div class="works fade_in">
-<div class="works-top">
-<p class="text_space"> Below, you will find some projects that I have ready to show as I continue to work and learn more. Repositories to see the code for all of these can be found on my github.</p> 
-<p>I am currently working with React but on my list of languages to get current and refreshed on are MySQL and PHP. Stay tuned!</p>
-</div>
+<header class="works-top">
+    <p class="text_space"> Below, you will find some projects that I have ready to show as I continue to work and learn more. Repositories to see the code for all of these can be found on my github.</p> 
+    <p>I am currently working with React but on my list of languages to get current and refreshed on are MySQL and PHP. Stay tuned!</p>
+</header>
 
 <h2>Newest Examples</h2>
 
@@ -12,18 +12,17 @@ My first app made in React and a little bit of bootstrap as I continue to improv
 
 <li><a href="https://luciencode-gig-tracker.netlify.app" class="link small_link" target="blank">Gig Tracker: An app that musicians can use to document their performances.</a></li>
 </ul>
+<section><h2>Earlier Examples</h2>
+    <ul>
+        <li><a href="https://luciencodeweather.netlify.app" class="link small_link" target="blank">Weather app with an emphasis on current alerts and advisories</a></li>
+        <li><a href="https://luciencode-quiz.netlify.app/" class="link small_link" target="blank">Quiz</a></li>
+        <li><a href="https://luciencode-note-widget.netlify.app/" class="link small_link" target="blank">Note taking app that stores notes in local storage</a></li>
+        <li><a href="https://luciencode-password-widget.netlify.app" class="link small_link" target="blank">Password Generator</a></li>
+        <li><a href="https://luciencode-halloween-timer.netlify.app" class="link small_link" target="blank">The time left until Halloween</a></li>
+    </ul>
+</section>
 
-<h2>Earlier Examples</h2>
-<ul>
-<li><a href="https://luciencodeweather.netlify.app" class="link small_link" target="blank">Weather app with an emphasis on current alerts and advisories</a></li>
-
-<li><a href="https://luciencode-quiz.netlify.app/" class="link small_link" target="blank">Quiz</a></li>
-
-<li><a href="https://luciencode-note-widget.netlify.app/" class="link small_link" target="blank">Note taking app that stores notes in local storage</a></li>
-
-<li><a href="https://luciencode-password-widget.netlify.app" class="link small_link" target="blank">Password Generator</a></li>
-
-<li><a href="https://luciencode-halloween-timer.netlify.app" class="link small_link" target="blank">The time left until Halloween</a></li></ul></div>`;
+</div>`;
 
 export const aboutText = `<div class="about fade_in"><p class="text_space">Hello!</p><p class="text_space">My name is Lucien.</p> <p class="text_space">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
 
