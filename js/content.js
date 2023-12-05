@@ -24,10 +24,10 @@ My first app made in React and a little bit of bootstrap as I continue to improv
 
 </div>`;
 
-export const aboutText = `<div class="about fade_in"><p class="text_space">Hello!</p><p class="text_space">My name is Lucien.</p> <p class="text_space">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
+export const aboutText = `<article class="about fade_in"><p class="text_space">Hello!</p><p class="text_space">My name is Lucien.</p> <p class="text_space">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
 
 <p class="text_space">I have most recently been a guitar technician in the retail world for the past eight years (which has kept my problem solving sharp) but I have decided to commit to returning to web coding.</p>
 
-<p>I've spent some time away but the journey back has been a challenging yet fun and rewarding path that I'll continue to walk and I look forward to doing so as part of a team where I'm sure my skills and confidence will then grow exponentially once I get started in full-time role.</p>`;
+<p>I've spent some time away but the journey back has been a challenging yet fun and rewarding path that I'll continue to walk and I look forward to doing so as part of a team where I'm sure my skills and confidence will then grow exponentially once I get started in full-time role.</p></article>`;
 
 export const splashPic = `<img class= "image-blur-edge fade_in" src="public/img/splash.png">`;
