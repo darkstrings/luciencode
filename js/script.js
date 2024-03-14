@@ -4,6 +4,7 @@ const contactLink = document.getElementById("contact");
 const homeLink = document.querySelector(".home");
 const contentDisplay = document.querySelector(".content");
 const contactDisplay = document.querySelector(".contact");
+document.querySelector(".year").innerText = new Date().getFullYear();
 
 import { worksMenu } from "./content.js";
 import { aboutText } from "./content.js";

@@ -196,7 +196,6 @@ li {
   padding-right: 1rem;
   font-size: 1.5rem;
   overflow-y: auto;
-  scrollbar-color: red;
 }
 
 .image-blur-edge {
