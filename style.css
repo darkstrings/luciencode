@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Orbit", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   background-color: rgb(0, 0, 0);
   margin: 0;
   color: red;
@@ -42,10 +42,6 @@ a:visited {
   text-decoration: none;
 }
 
-ul {
-  margin: 1rem;
-}
-
 li {
   margin: 0.3rem;
 }
@@ -65,8 +61,9 @@ li {
 .link:hover {
   filter: drop-shadow(0 1px 3px);
   cursor: pointer;
-  color: red;
+  color: rgb(226, 140, 12);
 }
+
 .main {
   display: grid;
   grid-template-columns: 40vw 55vw;
@@ -114,6 +111,64 @@ li {
   align-items: center;
 }
 
+/* Main left menu */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vw;
+  font-family: orbit, sans-serif;
+}
+
+/* Box where content appears */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  overflow-y: auto;
+}
+
+.image-blur-edge {
+  filter: drop-shadow(1rem 1rem 1rem #000000);
+}
+
+/* About me content */
+
+.about {
+  font-size: 1.3rem;
+  font-family: ;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+.about-p {
+  margin-bottom: 1rem;
+}
+
+/* works */
+
+.works {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.examples-list {
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.section-newest {
+  line-height: 1.5;
+}
+
 /* Contact form */
 
 .contact {
@@ -155,53 +210,6 @@ li {
   font-family: inherit;
 }
 
-/* About me content */
-
-.about {
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-}
-
-/* works */
-
-.works {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.3rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  padding-bottom: 1.5rem;
-}
-
-.works-top {
-  margin-bottom: 1.5rem;
-}
-
-/* Main left menu */
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 7vw;
-}
-
-/* Box where content appears */
-
-.content {
-  display: flex;
-  flex-direction: column;
-  padding-right: 1rem;
-  font-size: 1.5rem;
-  overflow-y: auto;
-}
-
-.image-blur-edge {
-  filter: drop-shadow(1rem 1rem 1rem #000000);
-}
-
 @media screen and (max-width: 800px) {
   .menu {
     flex-direction: row;
@@ -224,11 +232,9 @@ li {
   .contact {
     height: 70vh;
   }
-  .about {
-    font-size: 0.8rem;
-  }
-  .works {
-    font-size: 0.8rem;
+
+  .link-works {
+    text-decoration: underline;
   }
 }
 
