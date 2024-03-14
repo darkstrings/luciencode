@@ -30,4 +30,4 @@ export const aboutText = `<article class="about fade_in"><p class="text_space">H
 
 <p>I've spent some time away but the journey back has been a challenging yet fun and rewarding path that I'll continue to walk and I look forward to doing so as part of a team where I'm sure my skills and confidence will then grow exponentially once I get started in full-time role.</p></article>`;
 
-export const splashPic = `<img class= "image-blur-edge fade_in" src="public/img/splash.png">`;
+export const splashPic = `<img class= "image-blur-edge fade_in" src="public/img/splash.webp">`;
