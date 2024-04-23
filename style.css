@@ -41,6 +41,11 @@ a:visited {
   color: red;
   text-decoration: none;
 }
+.link:hover {
+  filter: drop-shadow(0 1px 3px);
+  cursor: pointer;
+  color: rgb(226, 140, 12);
+}
 
 li {
   margin: 0.3rem;
@@ -48,6 +53,10 @@ li {
 
 .text_space {
   padding-bottom: 1.3rem;
+}
+
+.small_link {
+  font-size: 1rem;
 }
 
 .small_link:hover {
@@ -58,10 +67,8 @@ li {
   font-size: 1.4rem;
 }
 
-.link:hover {
-  filter: drop-shadow(0 1px 3px);
-  cursor: pointer;
-  color: rgb(226, 140, 12);
+.link_lg {
+  font-size: 7vw;
 }
 
 .main {
@@ -76,6 +83,7 @@ li {
   width: 100%;
   align-items: end;
   height: 5vh;
+  justify-items: center;
 }
 
 .bottom__bar {
@@ -118,7 +126,6 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 7vw;
   font-family: orbit, sans-serif;
 }
 
@@ -139,8 +146,7 @@ li {
 /* About me content */
 
 .about {
-  font-size: 1.3rem;
-  font-family: ;
+  font-family: inherit;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1.5rem;
   line-height: 1.5;
@@ -155,7 +161,6 @@ li {
   display: flex;
   flex-direction: column;
 
-  font-size: 1.3rem;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   padding-bottom: 1.5rem;
@@ -172,7 +177,6 @@ li {
 /* Contact form */
 
 .contact {
-  font-size: 1.5rem;
   display: flex;
   background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
@@ -209,35 +213,6 @@ li {
   font-size: inherit;
   font-family: inherit;
 }
-
-@media screen and (max-width: 800px) {
-  .menu {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
-  .content {
-    justify-content: start;
-    padding-top: 3rem;
-  }
-  .top__bar {
-    font-size: 0.8rem;
-  }
-  .bottom__bar {
-    font-size: 0.8rem;
-  }
-  .contact {
-    height: 70vh;
-  }
-
-  .link-works {
-    text-decoration: underline;
-  }
-}
-
 .hidden {
   display: none;
 }
@@ -336,5 +311,39 @@ li {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    justify-content: start;
+    padding-top: 3rem;
+  }
+  .top__bar {
+    font-size: 0.8rem;
+  }
+  .bottom__bar {
+    font-size: 0.8rem;
+  }
+  .contact {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .small_link {
+    font-size: 0.8rem;
+  }
+  .top__bar {
+    margin-top: 0.5rem;
   }
 }
