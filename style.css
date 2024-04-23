@@ -37,10 +37,16 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
-  color: red;
-  text-decoration: none;
+.small_link,
+:visited {
+  color: rgb(200, 123, 22);
 }
+
+.small_link :active,
+.link :active {
+  color: greenyellow;
+}
+
 .link:hover {
   filter: drop-shadow(0 1px 3px);
   cursor: pointer;
@@ -56,19 +62,16 @@ li {
 }
 
 .small_link {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .small_link:hover {
   border-bottom: 1px solid black;
 }
 
-.corner {
-  font-size: 1.4rem;
-}
-
 .link_lg {
   font-size: 7vw;
+  cursor: pointer;
 }
 
 .main {
@@ -134,7 +137,7 @@ li {
 .content {
   display: flex;
   flex-direction: column;
-  padding-right: 1rem;
+
   font-size: 1.5rem;
   overflow-y: auto;
 }
@@ -183,7 +186,13 @@ li {
   justify-content: center;
 }
 
-.input {
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.message_input {
   border: 1px solid red;
   border-radius: 4px;
   color: red;
@@ -345,5 +354,8 @@ li {
   }
   .top__bar {
     margin-top: 0.5rem;
+  }
+  .bottom__bar {
+    margin-bottom: 5rem;
   }
 }
