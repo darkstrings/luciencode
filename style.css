@@ -28,9 +28,6 @@ body::after {
 }
 
 button {
-  cursor: pointer;
-  width: 50%;
-  align-self: center;
 }
 
 a:link {
@@ -70,7 +67,7 @@ li {
 }
 
 .link_lg {
-  font-size: 7vw;
+  font-size: 6vw;
   cursor: pointer;
 }
 
@@ -98,7 +95,8 @@ li {
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 6rem;
+  margin-bottom: 2rem;
 }
 
 /* Main left menu */
@@ -119,11 +117,13 @@ li {
 /* Box where content appears */
 
 .content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  align-content: center;
+  justify-content: center;
   font-size: 1.5rem;
   overflow-y: auto;
-  max-height: 100vh;
+  max-height: 70vh;
 }
 
 .image-blur-edge {
@@ -133,7 +133,6 @@ li {
 /* About me content */
 
 .about {
-  font-family: inherit;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1.5rem;
   line-height: 1.5;
@@ -141,6 +140,7 @@ li {
 
 .about-p {
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 /* works */
@@ -197,7 +197,7 @@ li {
 /* Contact Submit Button */
 
 .submit_btn {
-  width: 100%;
+  width: 50%;
   border-radius: 4px;
   color: red;
   border-width: 1px;
@@ -206,9 +206,14 @@ li {
   padding: 0.5rem;
   font-size: 1.5rem;
   font-family: inherit;
+  cursor: pointer;
 }
 .hidden {
   display: none;
+}
+
+.msg__input {
+  height: 10rem;
 }
 
 /* Link Effect */
@@ -324,7 +329,7 @@ li {
   }
 }
 
-@media screen and (max-width: 9700px) {
+@media screen and (max-width: 700px) {
   .content {
     font-size: 1.3rem;
   }
@@ -367,5 +372,9 @@ li {
   }
   .menu {
     margin-bottom: 1rem;
+  }
+  .about-p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 }

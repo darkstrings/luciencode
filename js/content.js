@@ -36,7 +36,6 @@ export const aboutText = `<section class="about fade_in"><p class="about-p">Hell
 
 <p class="about-p">I have most recently been a guitar technician in the retail world for the past eight years (which has kept my problem solving sharp) but with all locations of that company closing, I have decided to commit to returning to web development.</p>
 
-<p class="about-p">In the "Works" section, you'll find examples of my work. If you want to reach out, please teel free to use the contact link. Thank you for your time!</p>
+<p class="about-p">In the "Works" section, you'll find examples of my work. If you want to reach out, please teel free to use the contact link.</p> 
+<p>Thank you for your time!</p>
 <p class="about-p"> -Lucien</p></section>`;
-
-export const splashPic = `<img class= "image-blur-edge fade_in" src="public/img/splash.webp">`;

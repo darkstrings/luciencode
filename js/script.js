@@ -1,14 +1,12 @@
 const aboutLink = document.getElementById("about");
 const worksLink = document.getElementById("works");
 const contactLink = document.getElementById("contact");
-const homeLink = document.querySelector(".home");
 const contentDisplay = document.querySelector(".content");
 const contactDisplay = document.querySelector(".contact");
 document.querySelector(".year").innerText = new Date().getFullYear();
 
 import { worksMenu } from "./content.js";
 import { aboutText } from "./content.js";
-import { splashPic } from "./content.js";
 
 // About content
 aboutLink.addEventListener("click", () => {
@@ -32,14 +30,7 @@ contactLink.addEventListener("click", () => {
 
 // Splash pic in content onLoad
 addEventListener("load", () => {
-  contentDisplay.innerHTML = splashPic;
-});
-
-//home link (brings back splash)
-homeLink.addEventListener("click", () => {
-  contentDisplay.innerHTML = splashPic;
-  contentDisplay.classList.remove("hidden");
-  contactDisplay.classList.add("hidden");
+  contentDisplay.innerHTML = aboutText;
 });
 
 // Text effect on mouseOver/mouseOut
