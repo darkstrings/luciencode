@@ -82,11 +82,12 @@ li {
 }
 
 .top__bar {
+  margin: 3rem 0 0;
   display: flex;
   width: 100%;
-  align-items: end;
   height: 5vh;
-  justify-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .bottom__bar {
@@ -97,29 +98,7 @@ li {
 }
 
 .name {
-  display: flex;
-  width: 50vw;
-  align-items: center;
-}
-
-.links__top__right {
-  display: flex;
-  width: 50vw;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.home {
-  display: flex;
-  width: 50vw;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.copyright {
-  display: flex;
-  width: 50vw;
-  align-items: center;
+  font-size: 4rem;
 }
 
 /* Main left menu */
@@ -130,6 +109,11 @@ li {
   align-items: center;
   justify-content: center;
   font-family: orbit, sans-serif;
+}
+
+.bottom__bar {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Box where content appears */
@@ -189,10 +173,10 @@ li {
 .label {
   display: block;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
-.input,
-.message_input {
+.input {
   border: 1px solid red;
   border-radius: 4px;
   color: red;
@@ -213,13 +197,14 @@ li {
 /* Contact Submit Button */
 
 .submit_btn {
+  width: 100%;
   border-radius: 4px;
   color: red;
   border-width: 1px;
   border-color: red;
   background-color: rgb(66, 66, 63);
   padding: 0.5rem;
-  font-size: inherit;
+  font-size: 1.5rem;
   font-family: inherit;
 }
 .hidden {
@@ -324,21 +309,26 @@ li {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 900px) {
-  .menu {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+
+@media screen and (max-width: 1000px) {
   .main {
     display: flex;
     flex-direction: column;
   }
+  .name {
+    font-size: 2rem;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 9700px) {
   .content {
     font-size: 1.3rem;
   }
-  .top__bar {
-    font-size: 0.8rem;
-  }
+
   .bottom__bar {
     font-size: 0.8rem;
   }
@@ -348,11 +338,11 @@ li {
 }
 
 @media screen and (max-width: 450px) {
-  .small_link {
-    font-size: 0.8rem;
-  }
   .top__bar {
     margin-top: 0.5rem;
+  }
+  .name {
+    font-size: 1.5rem;
   }
   .about {
     font-size: 1rem;
