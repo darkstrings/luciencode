@@ -1,12 +1,15 @@
 export const worksMenu = `<div class="works fade_in">
 <header class="text_space">
-    <p class="top-p"> Below, you will find some projects that I have ready to show as I continue to work on more projects to add to the site. Currently I'm working on a project that involves React Router, React Query, Context API, React Hook Form and many custom hooks. Repositories to see the code for all of these can be found on my github.</p> 
+    <p class="top-p"> Below, you will find some projects that I have ready to show as I continue to work on more projects to add to the site. Repositories to see the code for all of these can be found on my github.</p> 
 
 </header>
 
 <section class="section-newest">
 <h2 class="example-header">Newest Examples</h2>
 <ul class="examples-list">
+
+<li>The employee frontend for a fictional hotel called <a href="https://harder-rock-hotel.netlify.app/" class="link link-works" target="blank"> "Harder Rock Hotel"</a> with themed cabins. It uses React, React Router, React Query, Context API, React Hook Form and many custom hooks.</li>
+
 <li>Ever want to get yourself a plutonium powered coffee grinder? <a href="https://atomicoffee.netlify.app/" class="link link-works" target="blank">AtomiCoffee</a> has you covered.</li>
 
 <li><a href="https://luciencode-salesdashboard.netlify.app" class="link link-works" target="blank">Sales Dashboard:</a>
