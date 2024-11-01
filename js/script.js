@@ -1,5 +1,6 @@
 const aboutLink = document.getElementById("about");
 const worksLink = document.getElementById("works");
+const gitHubLink = document.getElementById("github");
 const contactLink = document.getElementById("contact");
 const contentDisplay = document.querySelector(".content");
 const contactDisplay = document.querySelector(".contact");
@@ -57,4 +58,12 @@ worksLink.addEventListener("mouseover", () => {
 });
 worksLink.addEventListener("mouseout", () => {
   worksLink.classList.remove("link_glitch");
+});
+
+// GitHub Link
+gitHubLink.addEventListener("mouseover", () => {
+  gitHubLink.classList.add("link_glitch");
+});
+gitHubLink.addEventListener("mouseout", () => {
+  gitHubLink.classList.remove("link_glitch");
 });

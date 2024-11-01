@@ -31,20 +31,13 @@ a:link {
   text-decoration: none;
 }
 
-.small_link,
-:visited {
-  color: rgb(200, 123, 22);
-}
-
-.small_link :active,
-.link :active {
-  color: greenyellow;
-}
-
 .link:hover {
   filter: drop-shadow(0 1px 3px);
   cursor: pointer;
-  color: rgb(226, 140, 12);
+}
+
+a {
+  color: red;
 }
 
 li {
@@ -53,14 +46,6 @@ li {
 
 .text_space {
   padding-bottom: 1.3rem;
-}
-
-.small_link {
-  font-size: 1.5rem;
-}
-
-.small_link:hover {
-  border-bottom: 1px solid black;
 }
 
 .link_lg {
@@ -159,6 +144,11 @@ li {
 
 .section-newest {
   line-height: 1.5;
+}
+
+.link-works {
+  text-decoration: underline !important;
+  color: #7ced91;
 }
 
 /* Contact form */

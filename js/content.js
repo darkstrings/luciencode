@@ -23,7 +23,7 @@ My first app made in React and a little bit of bootstrap as I continue to improv
     <ul class="examples-list">
         <li><a href="https://luciencodeweather.netlify.app" class="link link-works" target="blank">Weather app</a> with an emphasis on current alerts and advisories</li>
 
-        <li><a href="https://luciencode-quiz.netlify.app/" class="link target="blank">Quiz</a></li>
+        <li><a href="https://luciencode-quiz.netlify.app/" class="link link-works target="blank">Quiz</a></li>
 
         <li><a href="https://luciencode-note-widget.netlify.app/" class="link link-works target="blank">Note taking app that stores notes in local storage</a></li>
 
@@ -35,10 +35,10 @@ My first app made in React and a little bit of bootstrap as I continue to improv
 
 </div>`;
 
-export const aboutText = `<section class="about fade_in"><p class="about-p">Hello!</p><p class="about-p">My name is Lucien.</p> <p class="about-p">I've had an associates degree in Web Development since 2005 and spent time in that and other facets of IT such as internet marketing assitance, desktop support and E-Mail server management as well.</p> 
-
-<p class="about-p">I have most recently been a guitar technician in the retail world for the past eight years (which has kept my problem solving sharp) but with all locations of that company closing, I have decided to commit to returning to web development.</p>
-
-<p class="about-p">In the "Works" section, you'll find examples of my work. If you want to reach out, please feel free to use the contact link.</p> 
-<p>Thank you for your time!</p>
-<p class="about-p"> -Lucien</p></section>`;
+export const aboutText = `
+<section class="about fade_in">
+<p class="about-p">My name is Lucien Gaydos, and I'm excited to be re-entering the world of web development.</p>
+<p class="about-p">After a successful career as a guitar technician, where I honed my problem-solving skills in a challenging industry, I'm now fully immersed in web development. I've been sharpening my skills with JavaScript, Node.js, MongoDB, Mongoose, and Express.js, and I'm diving deep into React to become a Full Stack developer.</p>
+<p class="about-p">I invite you to check out my github as well.</p>
+<p class="about-p">Thank you for visiting my portfolio site. I look forward to the possibility of contributing to your team.</p>
+</section>`;
