@@ -10,7 +10,7 @@ export const worksMenu = `<div class="works fade_in">
 <h2 class="example-header">Newest Examples</h2>
 <ul class="examples-list">
 
-<li><a href="https://tune-shed.onrender.com/" class="link link-works" target="blank">Tune Shed: </a>An online commerce site made with the MERN stack for buying new and used guitars (Please allow for a 30 second spin-up upon first arrival)</li>
+<li><a href="https://tune-shed.onrender.com/" class="link link-works" target="blank">Tune Shed: </a>An online commerce site made with the MERN stack for buying new and used guitars with PayPal connectivity. There is also full CRUD available via the Admin user. (Please allow for a 30 second spin-up upon first arrival and contact me if you want to take the user privileges )</li>
 
 <li>The employee frontend for a fictional hotel called <a href="https://harder-rock-hotel.netlify.app/" class="link link-works" target="blank"> "Harder Rock Hotel"</a> with themed cabins. It uses React, React Router, React Query, Context API, React Hook Form and many custom hooks.</li>
 
