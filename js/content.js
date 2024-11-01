@@ -29,7 +29,6 @@ My first app made in React and a little bit of bootstrap as I continue to improv
 
         <li><a href="https://luciencode-password-widget.netlify.app" class="link link-works" target="blank">Password Generator</a></li>
         
-        <li><a href="https://luciencode-halloween-timer.netlify.app" class="link link-works" target="blank">The time left until Halloween</a></li>
     </ul>
 </section>
 
