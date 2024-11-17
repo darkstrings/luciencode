@@ -1,0 +1,39 @@
+:root {
+  --line: 1px solid rgba(255, 0, 0, 0.431);
+  --thumb-line: 0px 0px 0px 1px rgba(255, 0, 0, 0.431);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: red;
+  background-image: url("../public/img/spokes.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-blur-edge {
+  filter: drop-shadow(1rem 1rem 1rem #000000);
+}
+
+.nav__list__item {
+  font-size: 4rem;
+  cursor: pointer;
+  background-color: rgba(000, 000, 000, 0.5);
+  border: none;
+}
+
+/* Contact form */

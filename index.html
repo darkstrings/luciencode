@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" type="module"></script>
 
 
@@ -21,48 +21,204 @@
 </head>
 
 <body>
-  <header class="top__bar">
-
-    <span class="name">Lucien Gaydos</span>
-  </header>
-
   <main class="main">
+    <div class="navbar">
+      <div class="logo">
 
-    <div class="menu">
-      <p id="about" title="About" class="link_lg">About</p>
-      <p id="works" title="Works" class="link_lg">Works</p>
-      <p id="github" title="Github" class="link_lg"><a href="https://github.com/darkstrings" target="blank">GitHub</a>
-      </p>
-      <p id="contact" title="Contact" class="link_lg">Contact</p>
+        <span class="logo__name">Lucien Gaydos</span>
+      </div>
+      <div class="nav">
+        <ul class="navbar__list">
+          <li> <button id="about" title="About" class="navbar__list__item "><a href="#about">About</a></button>
+          </li>
+          <li><button id="works" title="Works" class="navbar__list__item"><a href="#Works">Works</a></button></li>
+          <li> <button id="github" title="Github" class="navbar__list__item"><a href="https://github.com/darkstrings"
+                target="blank">GitHub</a>
+            </button></li>
+          <li><button id="contact" title="Contact" class="navbar__list__item"><a href="#contact">Contact</a></button>
+          </li>
+        </ul>
+      </div>
     </div>
 
+    <div class="content">
+      <div class="about container fade-in">
+        <p class="about__paragraph">Hello!</p>
 
-    <div class="content"></div>
+        <p class="about__paragraph">My name is Lucien Gaydos, and I'm excited to be re-entering the world of web
+          development.</p>
+        <p class="about__paragraph">After a successful career as a guitar technician, where I honed my problem-solving
+          skills in
+          a
+          challenging industry, I'm now fully immersed in web development. I've been sharpening my skills with
+          JavaScript,
+          Node.js, MongoDB, Mongoose, and Express.js, and I'm diving deep into React to become a Full Stack developer.
+        </p>
 
-    <!-- Contact form hidden -->
-    <div class="contact hidden fade_in">
-      <form name="contact" method="POST" netlify>
-        <div class="form_field">
-          <label for="name_input" class="label">Your Name: </label>
-          <input id="name_input" class="input" type="text" name="name" />
-        </div>
-        <div class="form_field">
-          <label for="email_input" class="label">Your Email Address: </label>
-          <input id="email_input" class="input" type="email" name="email" />
-        </div>
-        <div>
-          <label for="message_input" class="label">Message:</label>
-          <textarea id="message_input" class="input msg__input" name="message"></textarea>
-        </div>
-        <div class="button">
-          <button class="submit_btn" type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-    <bottom_bar class="bottom__bar">
-      <div class="copyright small_link ">©<span class="year">2029</span></div>
+        <p class="about__paragraph">I invite you to check out my github as well.</p>
+        <p class="about__paragraph">Thank you for visiting my portfolio site. I look forward to the possibility of
+          contributing
+          to your
+          team.</p>
+      </div>
+      <div class="works container fade-in">
 
-    </bottom_bar>
+        <div class="text_space">
+          <p class="about__paragraph"> Here are examples of my skills so far. Repositories to see the code for all of
+            these can be found on my github. </p>
+
+          <p class="about__paragraph"><strong>Some of these apps rely on free subscrptions of MongoDB, render.com and
+              netlify. I give them activity weekly so that they don't get put into a sleep state but things can always
+              change. A few may need 30 seconds to "spin up" if there's been inactivity for more than 15-30 minutes.
+              It's not a glitch but merely a one time delay as that service wakes up if it's been inactive.</strong></p>
+        </div>
+
+
+        <div class="container__carousel">
+          <div class="div__carousel auto__car">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <ul class="carousel__slides">
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="public/img/screenshots/atomicoffee.png" alt="">
+                  </div>
+                  <figcaption>
+                    Ever want to get yourself a plutonium powered coffee grinder? <a
+                      href="https://atomicoffee.netlify.app/" class="link link-works" target="blank">AtomiCoffee</a>
+                    has you covered.
+                    <br>
+                    <a href="https://github.com/darkstrings/atomicoffee" class="link link-works" target="blank">The
+                      GitHub repo</a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="public/img/screenshots/TuneShed.png" alt="">
+                  </div>
+                  <figcaption>
+                    <a href="https://tune-shed.onrender.com/" class="link link-works" target="blank">Tune Shed: </a>An
+                    online
+                    commerce site made with the MERN stack for buying new and used guitars with PayPal connectivity.
+                    There is
+                    also
+                    full CRUD available via the Admin user. (Please allow for a 30 second spin-up upon first arrival
+                    and
+                    contact me if you want to take the user privileges for a spin)
+                    <br>
+                    <a href="https://github.com/darkstrings/tune-shed" class="link link-works" target="blank">The GitHub
+                      repo</a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="public/img/screenshots/salesdashboard.png" alt="">
+                  </div>
+                  <figcaption>
+                    <a href="https://luciencode-salesdashboard.netlify.app" class="link link-works" target="blank">Sales
+                      Dashboard </a>
+                    is my first app made in React and a little bit of bootstrap. It
+                    calculates
+                    the hourly
+                    wage,
+                    commission rate, the number of hours worked and calculates totals. You can also add sales objects
+                    that add
+                    to
+                    your total via the commission rate while also calculating the amount of the commission if you had
+                    to share
+                    the
+                    spoils with another salesperson.
+                    <br>
+                    <a href="https://github.com/darkstrings/salesdashboard" class="link link-works" target="blank">The
+                      GitHub repo</a>
+
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="public/img/screenshots/harder-rock.png" alt="">
+                  </div>
+                  <figcaption>
+                    The employee frontend for a fictional hotel called <a href="https://harder-rock-hotel.netlify.app/"
+                      class="link link-works" target="blank"> "Harder
+                      Rock Hotel"</a> with themed cabins. It uses React, React
+                    Router, React Query, Context API, React Hook Form and many custom hooks.
+                    <br>
+                    <a href="https://github.com/darkstrings/harder_rock" class="link link-works" target="blank">The
+                      GitHub repo</a>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="carousel__thumbnails">
+              <li>
+                <label for="slide-1"><img src="public/img/screenshots/atomicoffee-logo.webp"
+                    alt="AtomiCoffee thumbnail image"></label>
+              </li>
+              <li>
+                <label for="slide-2"><img src="public/img/screenshots/logo-color-sm.png"
+                    alt="Tune Shed thumbnail image"></label>
+              </li>
+              <li>
+                <label for="slide-3"><img src="public/img/screenshots/salesdashboardlogo.png"
+                    alt="Sales Dashboard thumbnail image"></label>
+              </li>
+              <li>
+                <label for="slide-4"><img src="public/img/screenshots/harder-rock-logo.webp"
+                    alt="Harder Rock Hotel thumbnail image"></label>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Contact form -->
+
+
+      <div class="contact container fade-in">
+        <h3>Feel free to contact me with any questions, comments or to schedule interviews.</h3>
+        <h3>Thank you again for
+          visiting!</h3>
+        <br>
+        <form name="contact" method="POST" class="contact__form" netlify>
+          <div class="form-field">
+            <label for="name_input" class="label">Your Name: </label>
+            <input id="name_input" class="input" type="text" name="name" />
+          </div>
+          <div class="form_field">
+            <label for="email_input" class="label">Your Email Address: </label>
+            <input id="email_input" class="input" type="email" name="email" />
+          </div>
+          <div>
+            <label for="message__input" class="label">Message:</label>
+            <textarea id="message__input" class="input submit__message__input" name="message"></textarea>
+          </div>
+          <div class="submit">
+            <button class="submit__btn" type="submit">Send</button>
+          </div>
+        </form>
+
+      </div>
+      <bottom_bar class="bottom__bar container fade-in">
+        <div class="copyright small_link ">©<span class="year">2029</span></div>
+
+      </bottom_bar>
+
+
+
+
   </main>
   <!-- Bottom bar -->
 </body>

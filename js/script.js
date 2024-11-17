@@ -6,33 +6,13 @@ const contentDisplay = document.querySelector(".content");
 const contactDisplay = document.querySelector(".contact");
 document.querySelector(".year").innerText = new Date().getFullYear();
 
-import { worksMenu } from "./content.js";
-import { aboutText } from "./content.js";
-
-// About content
-aboutLink.addEventListener("click", () => {
-  contentDisplay.innerHTML = aboutText;
-  contentDisplay.classList.remove("hidden");
-  contactDisplay.classList.add("hidden");
-});
-
-// works content
-worksLink.addEventListener("click", () => {
-  contentDisplay.innerHTML = worksMenu;
-  contentDisplay.classList.remove("hidden");
-  contactDisplay.classList.add("hidden");
-});
-
-//contact content
-contactLink.addEventListener("click", () => {
-  contentDisplay.classList.add("hidden");
-  contactDisplay.classList.remove("hidden");
-});
-
-// Splash pic in content onLoad
-addEventListener("load", () => {
-  contentDisplay.innerHTML = aboutText;
-});
+// Init for carousel auto-slide
+const carousel = document.querySelector(".auto__car");
+const inputs = carousel.querySelectorAll("input");
+const intervalTime = 5000; // time in milliseconds (5000 = 5 seconds)
+let currentIndex = 0;
+let timer;
+let isPaused = false;
 
 // Text effect on mouseOver/mouseOut
 
@@ -67,3 +47,48 @@ gitHubLink.addEventListener("mouseover", () => {
 gitHubLink.addEventListener("mouseout", () => {
   gitHubLink.classList.remove("link_glitch");
 });
+
+// Prevent scrolling on clicks on thumbnails.
+
+const thumbnailLabels = document.querySelectorAll(".carousel__thumbnails label");
+
+thumbnailLabels.forEach((label) => {
+  label.addEventListener("click", (event) => {
+    event.preventDefault();
+    const radioInput = document.querySelector(`#${label.htmlFor}`);
+    radioInput.click();
+  });
+});
+
+// Auto slide on carousel
+
+function changeSlide() {
+  if (isPaused) return;
+
+  inputs[currentIndex].checked = false;
+  currentIndex = (currentIndex + 1) % inputs.length;
+  inputs[currentIndex].checked = true;
+}
+
+function startTimer() {
+  timer = setInterval(changeSlide, intervalTime);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
+
+function pause() {
+  isPaused = true;
+  stopTimer();
+}
+
+function resume() {
+  isPaused = false;
+  startTimer();
+}
+
+carousel.addEventListener("mouseenter", pause);
+carousel.addEventListener("mouseleave", resume);
+
+startTimer();
