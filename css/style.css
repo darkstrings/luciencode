@@ -10,7 +10,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Chakra Petch", sans-serif;
@@ -114,48 +115,16 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 4rem; }
   .about__paragraph {
-    margin-bottom: 1.5rem;
-    font-size: 3rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 1.2; }
 
 .works {
   background-color: rgba(0, 0, 0, 0.7); }
 
-.label {
-  display: block;
-  font-size: 2rem; }
-
-.input {
-  border: 1px solid red;
-  border-radius: 4px;
-  color: red;
-  padding: 1rem;
-  background-color: #42423f; }
-
-/* Contact Submit Button DIV */
-.button__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem; }
-
-/* Contact Submit Button */
-.submit__btn {
-  width: 50%;
-  border-radius: 4px;
-  color: red;
-  border-width: 1px;
-  border-color: red;
-  background-color: #42423f;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  font-family: inherit;
-  cursor: pointer; }
-  .submit__btn__message__input {
-    height: 10rem; }
-
 .container__carousel {
-  margin: 2rem 0 4rem 0 auto;
-  padding: 50px 0;
+  margin: 2rem 0 2rem 0 auto;
+  padding: 3rem 0;
   width: 100%; }
 
 .div__carousel {
@@ -187,6 +156,10 @@ body {
       box-shadow: var(--thumb-line); }
     .div__carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
       box-shadow: var(--thumb-line); }
+
+.about__advise {
+  font-size: 1.7rem;
+  margin: 1.5rem 0; }
 
 .carousel__slides {
   position: relative;
@@ -288,4 +261,77 @@ body {
     height: 100%;
     object-fit: contain; }
 
+.contact__form {
+  width: 30vw; }
+
+.label {
+  display: block;
+  font-size: 2rem; }
+
+.input {
+  border: 1px solid red;
+  border-radius: 4px;
+  color: red;
+  padding: 1rem;
+  background-color: #42423f;
+  width: 100%; }
+
+/* Contact Submit Button DIV */
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; }
+
+/* Contact Submit Button */
+.submit__btn {
+  width: 100%;
+  border-radius: 4px;
+  color: red;
+  border-width: 1px;
+  border-color: red;
+  background-color: #42423f;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 1rem; }
+  .submit__btn__message__input {
+    height: 10rem; }
+
 /* -----------------------FADE IN CONTENT------------ */
+.fade-in {
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes lights {
+  0% {
+    color: #b8bee0;
+    text-shadow: 0 0 1em rgba(255, 0, 170, 0.2), 0 0 0.125em rgba(255, 51, 187, 0.3), -1em -0.125em 0.5em rgba(255, 187, 51, 0), 1em 0.125em 0.5em rgba(51, 187, 255, 0); }
+  30% {
+    color: #d1d8fa;
+    text-shadow: 0 0 1em rgba(255, 0, 170, 0.5), 0 0 0.125em rgba(255, 51, 187, 0.5), -0.5em -0.125em 0.25em rgba(255, 187, 51, 0.2), 0.5em 0.125em 0.25em rgba(51, 187, 255, 0.4); }
+  40% {
+    color: #e6eaff;
+    text-shadow: 0 0 1em rgba(255, 0, 170, 0.5), 0 0 0.125em rgba(255, 204, 238, 0.5), -0.25em -0.125em 0.125em rgba(255, 187, 51, 0.2), 0.25em 0.125em 0.125em rgba(51, 187, 255, 0.4); }
+  70% {
+    color: #d1d8fa;
+    text-shadow: 0 0 1em rgba(255, 0, 170, 0.5), 0 0 0.125em rgba(255, 51, 187, 0.5), 0.5em -0.125em 0.25em rgba(255, 187, 51, 0.2), -0.5em 0.125em 0.25em rgba(51, 187, 255, 0.4); }
+  100% {
+    color: #b8bee0;
+    text-shadow: 0 0 1em rgba(255, 0, 170, 0.2), 0 0 0.125em rgba(255, 51, 187, 0.3), 1em -0.125em 0.5em rgba(255, 187, 51, 0), -1em 0.125em 0.5em rgba(51, 187, 255, 0); } }
+
+.glitch {
+  animation: lights 1s 0ms ease-in-out infinite; }

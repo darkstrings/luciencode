@@ -29,14 +29,16 @@
       </div>
       <div class="nav">
         <ul class="navbar__list">
-          <li> <button id="about" title="About" class="navbar__list__item "><a href="#about">About</a></button>
+
+          <li><button id="works-btn" title="Works" class="navbar__list__item"><a href="#works" target="blank">Works</a>
+            </button></li>
+          <li><button id="contact-btn" title="Contact" class="navbar__list__item"><a
+                href="#contact">Contact</a></button>
           </li>
-          <li><button id="works" title="Works" class="navbar__list__item"><a href="#Works">Works</a></button></li>
-          <li> <button id="github" title="Github" class="navbar__list__item"><a href="https://github.com/darkstrings"
+          <li><button id="github-btn" title="Github" class="navbar__list__item"><a href="https://github.com/darkstrings"
                 target="blank">GitHub</a>
             </button></li>
-          <li><button id="contact" title="Contact" class="navbar__list__item"><a href="#contact">Contact</a></button>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -55,24 +57,22 @@
           Node.js, MongoDB, Mongoose, and Express.js, and I'm diving deep into React to become a Full Stack developer.
         </p>
 
-        <p class="about__paragraph">I invite you to check out my github as well.</p>
+        <p class="about__paragraph">I invite you to check out my <a href="https://github.com/darkstrings"
+            target="blank">GitHub</a> as well.</p>
         <p class="about__paragraph">Thank you for visiting my portfolio site. I look forward to the possibility of
-          contributing
-          to your
-          team.</p>
+          contributing to your team.</p>
       </div>
-      <div class="works container fade-in">
+      <div class="works container fade-in" id="works">
 
         <div class="text_space">
           <p class="about__paragraph"> Here are examples of my skills so far. Repositories to see the code for all of
-            these can be found on my github. </p>
-
-          <p class="about__paragraph"><strong>Some of these apps rely on free subscrptions of MongoDB, render.com and
+            these can be found on my <a href="https://github.com/darkstrings" target="blank">GitHub</a>. </p>
+          <p class="about__advise"><strong>Some of these apps rely on free subscrptions of MongoDB, render.com and
               netlify. I give them activity weekly so that they don't get put into a sleep state but things can always
               change. A few may need 30 seconds to "spin up" if there's been inactivity for more than 15-30 minutes.
-              It's not a glitch but merely a one time delay as that service wakes up if it's been inactive.</strong></p>
+              It's not a glitch but merely a one time delay as that service wakes up if it's been inactive.</strong>
+          </p>
         </div>
-
 
         <div class="container__carousel">
           <div class="div__carousel auto__car">
@@ -80,6 +80,7 @@
             <input type="radio" name="slides" id="slide-2">
             <input type="radio" name="slides" id="slide-3">
             <input type="radio" name="slides" id="slide-4">
+
             <ul class="carousel__slides">
               <li class="carousel__slide">
                 <figure>
@@ -87,7 +88,7 @@
                     <img src="public/img/screenshots/atomicoffee.png" alt="">
                   </div>
                   <figcaption>
-                    Ever want to get yourself a plutonium powered coffee grinder? <a
+                    Have you ever wanted to get yourself a plutonium powered coffee grinder? <a
                       href="https://atomicoffee.netlify.app/" class="link link-works" target="blank">AtomiCoffee</a>
                     has you covered.
                     <br>
@@ -159,6 +160,7 @@
                 </figure>
               </li>
             </ul>
+
             <ul class="carousel__thumbnails">
               <li>
                 <label for="slide-1"><img src="public/img/screenshots/atomicoffee-logo.webp"
@@ -187,12 +189,13 @@
       <!-- Contact form -->
 
 
-      <div class="contact container fade-in">
+      <div class="contact container fade-in" id="contact">
         <h3>Feel free to contact me with any questions, comments or to schedule interviews.</h3>
         <h3>Thank you again for
           visiting!</h3>
         <br>
-        <form name="contact" method="POST" class="contact__form" netlify>
+
+        <form class="contact__form" name="contact" method="POST" netlify>
           <div class="form-field">
             <label for="name_input" class="label">Your Name: </label>
             <input id="name_input" class="input" type="text" name="name" />
@@ -203,7 +206,7 @@
           </div>
           <div>
             <label for="message__input" class="label">Message:</label>
-            <textarea id="message__input" class="input submit__message__input" name="message"></textarea>
+            <textarea id="message__input" class="input message__input" name="message"></textarea>
           </div>
           <div class="submit">
             <button class="submit__btn" type="submit">Send</button>

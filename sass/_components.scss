@@ -33,19 +33,14 @@
   font-size: 5rem;
 }
 
-//////////////////////////////////////////
-///////////////////// CONTENT
-///
-///
-///
-///
 /////////////////ABOUT
 .about {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 4rem;
   &__paragraph {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: 3rem;
+    line-height: 1.2;
   }
 }
 ///////////////WORKS
@@ -53,55 +48,6 @@
 ///
 .works {
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-//////////////////////////////////////////////
-////////////////CONTACT FORM
-///
-///
-.contact {
-}
-
-.label {
-  display: block;
-  font-size: 2rem;
-}
-
-.input {
-  border: 1px solid red;
-  border-radius: 4px;
-  color: red;
-  padding: 1rem;
-  background-color: rgb(66, 66, 63);
-}
-
-/* Contact Submit Button DIV */
-.button__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-/* Contact Submit Button */
-
-.submit {
-  &__btn {
-    width: 50%;
-    border-radius: 4px;
-    color: red;
-    border-width: 1px;
-    border-color: red;
-    background-color: rgb(66, 66, 63);
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-family: inherit;
-    cursor: pointer;
-
-    &__message__input {
-      height: 10rem;
-    }
-  }
 }
 
 ///////////////////////////////////////////////////
@@ -152,8 +98,8 @@
 // Styling
 
 .container__carousel {
-  margin: 2rem 0 4rem 0 auto;
-  padding: 50px 0;
+  margin: 2rem 0 2rem 0 auto;
+  padding: 3rem 0;
   width: 100%;
 }
 
@@ -198,6 +144,11 @@
       box-shadow: var(--thumb-line);
     }
   }
+}
+
+.about__advise {
+  font-size: 1.7rem;
+  margin: 1.5rem 0;
 }
 
 .carousel__slides {
@@ -305,4 +256,59 @@
   }
 }
 
-// CONTACT FORM
+//////////////////////////////////////////////
+////////////////CONTACT FORM
+///
+///
+
+.contact__form {
+  width: 30vw;
+}
+
+.label {
+  display: block;
+  font-size: 2rem;
+}
+
+.input {
+  border: 1px solid red;
+  border-radius: 4px;
+  color: red;
+  padding: 1rem;
+  background-color: rgb(66, 66, 63);
+  width: 100%;
+}
+
+.message-input {
+  // height: 4rem;
+}
+
+/* Contact Submit Button DIV */
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Contact Submit Button */
+
+.submit {
+  &__btn {
+    width: 100%;
+    border-radius: 4px;
+    color: red;
+    border-width: 1px;
+    border-color: red;
+    background-color: rgb(66, 66, 63);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    &__message__input {
+      height: 10rem;
+    }
+  }
+}

@@ -1,9 +1,7 @@
-const aboutLink = document.getElementById("about");
-const worksLink = document.getElementById("works");
-const gitHubLink = document.getElementById("github");
-const contactLink = document.getElementById("contact");
-const contentDisplay = document.querySelector(".content");
-const contactDisplay = document.querySelector(".contact");
+const worksLink = document.getElementById("works-btn");
+const gitHubLink = document.getElementById("github-btn");
+const contactLink = document.getElementById("contact-btn");
+
 document.querySelector(".year").innerText = new Date().getFullYear();
 
 // Init for carousel auto-slide
@@ -16,40 +14,32 @@ let isPaused = false;
 
 // Text effect on mouseOver/mouseOut
 
-// About
-aboutLink.addEventListener("mouseover", () => {
-  aboutLink.classList.add("link_glitch");
-});
-aboutLink.addEventListener("mouseout", () => {
-  aboutLink.classList.remove("link_glitch");
-});
-
 //contact
 contactLink.addEventListener("mouseover", () => {
-  contactLink.classList.add("link_glitch");
+  contactLink.classList.add("glitch");
+  console.log("over on contact");
 });
 contactLink.addEventListener("mouseout", () => {
-  contactLink.classList.remove("link_glitch");
+  contactLink.classList.remove("glitch");
 });
 
 //works
 worksLink.addEventListener("mouseover", () => {
-  worksLink.classList.add("link_glitch");
+  worksLink.classList.add("glitch");
 });
 worksLink.addEventListener("mouseout", () => {
-  worksLink.classList.remove("link_glitch");
+  worksLink.classList.remove("glitch");
 });
 
 // GitHub Link
 gitHubLink.addEventListener("mouseover", () => {
-  gitHubLink.classList.add("link_glitch");
+  gitHubLink.classList.add("glitch");
 });
 gitHubLink.addEventListener("mouseout", () => {
-  gitHubLink.classList.remove("link_glitch");
+  gitHubLink.classList.remove("glitch");
 });
 
 // Prevent scrolling on clicks on thumbnails.
-
 const thumbnailLabels = document.querySelectorAll(".carousel__thumbnails label");
 
 thumbnailLabels.forEach((label) => {
@@ -61,7 +51,6 @@ thumbnailLabels.forEach((label) => {
 });
 
 // Auto slide on carousel
-
 function changeSlide() {
   if (isPaused) return;
 
