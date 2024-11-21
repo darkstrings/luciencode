@@ -1,7 +1,10 @@
 .container {
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 1rem;
   border-bottom: var(--line);
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem;
+  }
 }
 
 .main {
@@ -18,10 +21,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
   align-items: center;
   width: 100%;
   margin-bottom: 4rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 3rem;
+  }
 }
 
 .bottom__bar {
@@ -31,6 +37,7 @@
 
 .content {
   max-width: 70vw;
+  margin: 0 auto;
 }
 
 /* works */
@@ -43,13 +50,14 @@
 
 //////////////////////////////////////
 /// Contact
+///
 
 .contact {
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  align-items: center;
+  padding: 2rem;
+}
+
+.contact__form {
+  width: 30vw;
 }
 
 // Copyright
@@ -63,5 +71,5 @@
   grid-column-end: 3;
   font-size: 1.5rem;
   padding: 4rem 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bg-dark);
 }

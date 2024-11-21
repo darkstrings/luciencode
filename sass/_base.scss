@@ -1,7 +1,11 @@
 :root {
   --line: 1px solid rgba(255, 0, 0, 0.431);
   --thumb-line: 0px 0px 0px 1px rgba(255, 0, 0, 0.431);
+  --bg-dark: rgba(000, 000, 000, 0.5);
 }
+
+$bp-largest: 75em; //1200px / 16
+$bp-large: 59.375em; //950px / 16
 
 *,
 *::after,
@@ -24,6 +28,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  // display: flex;
+  // justify-content: center;
 }
 
 .image-blur-edge {
@@ -33,7 +39,7 @@ body {
 .nav__list__item {
   font-size: 4rem;
   cursor: pointer;
-  background-color: rgba(000, 000, 000, 0.5);
+  background-color: var(--bg-dark);
   border: none;
 }
 
