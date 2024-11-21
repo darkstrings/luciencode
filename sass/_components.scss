@@ -7,7 +7,7 @@
 
   &__item {
     font-size: 5rem;
-    margin-left: 3rem;
+    margin: 1.5rem;
     font-family: orbit, sans-serif;
     background-color: var(--bg-dark);
     border: none;
@@ -47,7 +47,7 @@
 /////////////////ABOUT
 .about {
   background-color: var(--bg-dark);
-  padding: 4rem;
+
   &__paragraph {
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -57,6 +57,9 @@
     }
     @media only screen and (max-width: $bp-large) {
       font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-med) {
+      line-height: 1.1;
     }
   }
   &__advise {
