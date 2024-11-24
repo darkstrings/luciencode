@@ -4,9 +4,11 @@
   --bg-dark: rgba(000, 000, 000, 0.5);
 }
 
-$bp-largest: 75em; //1200px / 16
+$bp-largest: 78.125em; //1200px / 16
+$bp-larger: 65.625em; //1050px / 16
 $bp-large: 59.375em; //950px / 16
 $bp-med: 54.375em; //870px / 16
+$bp-sm: 37.5em; //600px / 16
 
 *,
 *::after,

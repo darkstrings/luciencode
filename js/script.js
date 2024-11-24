@@ -80,4 +80,4 @@ function resume() {
 carousel.addEventListener("mouseenter", pause);
 carousel.addEventListener("mouseleave", resume);
 
-startTimer();
+// startTimer();

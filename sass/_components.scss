@@ -4,6 +4,9 @@
 .navbar__list {
   display: flex;
   list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 
   &__item {
     font-size: 5rem;
@@ -20,6 +23,11 @@
     }
     @media only screen and (max-width: $bp-large) {
       font-size: 3.5rem;
+    }
+    @media only screen and (max-width: $bp-med) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bp-sm) {
     }
     a {
       color: red;
@@ -69,12 +77,6 @@
       font-size: 1.8rem;
     }
   }
-}
-///////////////WORKS
-///
-///
-.works {
-  background-color: var(--bg-dark);
 }
 
 ///////////////////////////////////////////////////
@@ -205,6 +207,10 @@
   figure {
     display: flex;
     margin: 0;
+    @media only screen and (max-width: $bp-med) {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
   }
 
   div {
@@ -221,11 +227,16 @@
 
   figcaption {
     align-self: flex-end;
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 3rem 1rem 3rem;
     flex: 0 0 auto;
     width: 50%;
     align-self: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+
+    @media only screen and (max-width: $bp-med) {
+      width: 90%;
+      padding: 1.56rem;
+    }
 
     a:link {
       color: rgb(71, 220, 71);
@@ -311,6 +322,9 @@
   @media only screen and (max-width: $bp-large) {
     font-size: 1.3rem;
   }
+  @media only screen and (max-width: $bp-sm) {
+    // font-size: 0.8rem;
+  }
 }
 
 .label {
@@ -339,6 +353,15 @@
   padding: 1rem;
 }
 
+.contact__form label {
+  @media only screen and (max-width: $bp-med) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 1.2rem;
+  }
+}
 /* Contact Submit Button */
 
 .submit {
