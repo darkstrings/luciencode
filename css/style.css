@@ -23,6 +23,16 @@ body {
   background-position: center;
   background-size: cover; }
 
+.link {
+  color: #47dc47;
+  text-decoration: none; }
+
+.link:visited {
+  color: #198d19; }
+
+.link:active {
+  color: #7dc832; }
+
 .image-blur-edge {
   filter: drop-shadow(1rem 1rem 1rem #000000); }
 
@@ -289,10 +299,6 @@ body {
       .carousel__slide figcaption {
         width: 90%;
         padding: 1.56rem; } }
-    .carousel__slide figcaption a:link {
-      color: #47dc47; }
-    .carousel__slide figcaption a:visited {
-      color: #9e1e9e; }
   .carousel__slide .credit {
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.5);
@@ -385,7 +391,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .contact__form label {
-    font-size: 1.2rem; } }
+    font-size: 1.21rem; } }
 
 /* Contact Submit Button */
 .submit__btn {

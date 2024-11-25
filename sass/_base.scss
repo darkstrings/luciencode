@@ -32,6 +32,18 @@ body {
   background-position: center;
   background-size: cover;
 }
+.link {
+  color: rgb(71, 220, 71);
+  text-decoration: none;
+}
+
+.link:visited {
+  color: rgb(25, 141, 25);
+}
+
+.link:active {
+  color: rgb(125, 200, 50);
+}
 
 .image-blur-edge {
   filter: drop-shadow(1rem 1rem 1rem #000000);

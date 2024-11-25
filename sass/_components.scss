@@ -237,13 +237,6 @@
       width: 90%;
       padding: 1.56rem;
     }
-
-    a:link {
-      color: rgb(71, 220, 71);
-    }
-    a:visited {
-      color: rgb(158, 30, 158);
-    }
   }
 
   .credit {
@@ -359,7 +352,7 @@
   }
 
   @media only screen and (max-width: $bp-sm) {
-    font-size: 1.2rem;
+    font-size: 1.21rem;
   }
 }
 /* Contact Submit Button */
