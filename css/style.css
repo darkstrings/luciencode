@@ -71,12 +71,15 @@ body {
   border-bottom: var(--line); }
 
 .navbar {
+  position: sticky;
+  background-color: var(--bg-dark);
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem 0 2rem;
-  align-items: center;
-  width: 90%;
+  width: 100%;
   margin-bottom: 7rem; }
   @media only screen and (max-width: 65.625em) {
     .navbar {
@@ -148,7 +151,9 @@ body {
     border-radius: 1rem;
     padding: 0;
     display: flex;
-    padding: 0 1rem 1rem 1rem; }
+    padding: 0 1rem 1rem 1rem;
+    color: red;
+    text-decoration: none; }
     @media only screen and (max-width: 78.125em) {
       .navbar__list__item {
         font-size: 4rem; } }
@@ -158,9 +163,6 @@ body {
     @media only screen and (max-width: 54.375em) {
       .navbar__list__item {
         font-size: 3rem; } }
-    .navbar__list__item a {
-      color: red;
-      text-decoration: none; }
 
 .logo {
   display: flex;

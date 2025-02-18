@@ -18,6 +18,8 @@
     padding: 0;
     display: flex;
     padding: 0 1rem 1rem 1rem;
+    color: red;
+    text-decoration: none;
     @media only screen and (max-width: $bp-largest) {
       font-size: 4rem;
     }
@@ -28,10 +30,6 @@
       font-size: 3rem;
     }
     @media only screen and (max-width: $bp-sm) {
-    }
-    a {
-      color: red;
-      text-decoration: none;
     }
   }
 }

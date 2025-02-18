@@ -28,12 +28,15 @@
 }
 
 .navbar {
+  position: sticky;
+  background-color: var(--bg-dark);
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem 0 2rem;
-  align-items: center;
-  width: 90%;
+  width: 100%;
   margin-bottom: 7rem;
   @media only screen and (max-width: $bp-larger) {
     flex-direction: column;

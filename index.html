@@ -29,15 +29,20 @@
       </div>
       <div class="nav">
         <ul class="navbar__list">
+          <li><button id="works-btn" title="Works" class="navbar__list__item"
+              onclick="location.href='#works'">Works</button></li>
 
-          <li><button id="works-btn" title="Works" class="navbar__list__item"><a href="#works">Works</a>
-            </button></li>
-          <li><button id="contact-btn" title="Contact" class="navbar__list__item"><a
-                href="#contact">Contact</a></button>
+          <li>
+            <button id="contact-btn" title="contact" class="navbar__list__item"
+              onclick="location.href='#contact'">Contact</button>
           </li>
-          <li><button id="github-btn" title="Github" class="navbar__list__item"><a href="https://github.com/darkstrings"
-                target="blank">GitHub</a>
-            </button></li>
+
+          <li>
+            <button id="github-btn" title="Github" class="navbar__list__item"
+              onclick="window.open('https://github.com/darkstrings', '_blank')">
+              GitHub
+            </button>
+          </li>
 
         </ul>
       </div>
@@ -85,7 +90,7 @@
               <li class="carousel__slide">
                 <figure>
                   <div>
-                    <img src="public/img/screenshots/atomicoffee.png" alt="">
+                    <img src="public/img/screenshots/atomicoffee.png" alt="AtomiCoffee">
                   </div>
                   <figcaption>
                     Have you ever wanted to get yourself a plutonium powered coffee grinder? <a
@@ -101,7 +106,7 @@
               <li class="carousel__slide">
                 <figure>
                   <div>
-                    <img src="public/img/screenshots/TuneShed.png" alt="">
+                    <img src="public/img/screenshots/TuneShed.png" alt="Tune Shed">
                   </div>
                   <figcaption>
                     <a href="https://tune-shed.onrender.com/" class="link" target="blank">Tune Shed: </a>An
@@ -117,7 +122,7 @@
               <li class="carousel__slide">
                 <figure>
                   <div>
-                    <img src="public/img/screenshots/salesdashboard.png" alt="">
+                    <img src="public/img/screenshots/salesdashboard.png" alt="Sales Dashboard">
                   </div>
                   <figcaption>
                     <a href="https://luciencode-salesdashboard.netlify.app" class="link" target="blank">Sales
@@ -142,7 +147,7 @@
               <li class="carousel__slide">
                 <figure>
                   <div>
-                    <img src="public/img/screenshots/harder-rock.png" alt="">
+                    <img src="public/img/screenshots/harder-rock.png" alt="Harder Rock Hotel">
                   </div>
                   <figcaption>
                     The employee frontend for the main desk terminals of a fictional hotel called <a
@@ -195,15 +200,15 @@
         <form class="contact__form" name="contact" method="POST" netlify>
           <div class="form-field">
             <label for="name_input" class="label">Your Name: </label>
-            <input id="name_input" class="input" type="text" name="name" />
+            <input id="name_input" class="input" type="text" name="name" required />
           </div>
           <div class="form_field">
             <label for="email_input" class="label">Email Address: </label>
-            <input id="email_input" class="input" type="email" name="email" />
+            <input id="email_input" class="input" type="email" name="email" required />
           </div>
           <div>
             <label for="message__input" class="label">Message:</label>
-            <textarea id="message__input" class="input message__input" name="message"></textarea>
+            <textarea id="message__input" class="input message__input" name="message" required></textarea>
           </div>
           <div class="submit">
             <button class="submit__btn" type="submit">Send</button>
@@ -212,7 +217,7 @@
 
       </div>
       <bottom_bar class="bottom__bar container">
-        <div class="copyright small_link ">©<span class="year">2029</span></div>
+        <div class="copyright small_link ">©<span class="year"></span></div>
 
       </bottom_bar>
 
