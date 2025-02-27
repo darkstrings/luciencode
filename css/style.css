@@ -253,6 +253,12 @@ body {
     cursor: pointer;
     font-size: 4rem;
     transition: background 0.3s; }
+    @media only screen and (max-width: 54.375em) {
+      .div__carousel__btn {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 54.375em) {
+      .div__carousel__btn {
+        font-size: 2rem; } }
   .div__carousel__btn:hover {
     background: rgba(0, 0, 0, 0.8); }
   .div__carousel > input {
@@ -341,7 +347,11 @@ body {
     @media only screen and (max-width: 54.375em) {
       .carousel__slide figcaption {
         width: 90%;
-        padding: 1.56rem; } }
+        padding: 1.56rem;
+        font-size: 2rem; } }
+    @media only screen and (max-width: 54.375em) {
+      .carousel__slide figcaption {
+        font-size: 1.5rem; } }
   .carousel__slide .credit {
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.5);

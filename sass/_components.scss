@@ -176,6 +176,12 @@
     cursor: pointer;
     font-size: 4rem;
     transition: background 0.3s;
+    @media only screen and (max-width: $bp-med) {
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: $bp-med) {
+      font-size: 2rem;
+    }
   }
 
   &__btn:hover {
@@ -276,6 +282,10 @@
     @media only screen and (max-width: $bp-med) {
       width: 90%;
       padding: 1.56rem;
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-med) {
+      font-size: 1.5rem;
     }
   }
 
@@ -338,7 +348,6 @@
 
 //////////////////////////////////////////////
 ////////////////CONTACT FORM
-///
 ///
 ///
 ///
