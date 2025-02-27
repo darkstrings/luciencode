@@ -111,6 +111,9 @@ body {
   @media only screen and (max-width: 54.375em) {
     .content {
       width: 90%; } }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      width: 95%; } }
 
 /* works */
 .works {
@@ -163,6 +166,9 @@ body {
     @media only screen and (max-width: 54.375em) {
       .navbar__list__item {
         font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list__item {
+        font-size: 2rem; } }
 
 .logo {
   display: flex;
@@ -178,6 +184,9 @@ body {
   @media only screen and (max-width: 59.375em) {
     .logo {
       font-size: 3.5rem; } }
+  @media only screen and (max-width: 54.375em) {
+    .logo {
+      font-size: 3rem; } }
 
 .about {
   background-color: var(--bg-dark);
@@ -196,6 +205,9 @@ body {
     @media only screen and (max-width: 54.375em) {
       .about__paragraph {
         line-height: 1.1; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__paragraph {
+        font-size: 1.5rem; } }
   .about__advise {
     font-size: 1.7rem;
     margin: 1.5rem 0;
@@ -203,6 +215,12 @@ body {
     @media only screen and (max-width: 59.375em) {
       .about__advise {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 54.375em) {
+      .about__advise {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__advise {
+        font-size: 1.2rem; } }
 
 .container__carousel {
   margin: 2rem 0 2rem 0 auto;
@@ -217,6 +235,26 @@ body {
   display: block;
   text-align: left;
   position: relative; }
+  .div__carousel__nav {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-80%); }
+  .div__carousel__btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: background 0.3s; }
+  .div__carousel__btn:hover {
+    background: rgba(0, 0, 0, 0.8); }
   .div__carousel > input {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -311,6 +349,9 @@ body {
   .carousel__slide.scrollable {
     overflow-y: scroll; }
 
+.carousel__slide a img {
+  display: inline-block; }
+
 .carousel__thumbnails {
   list-style: none;
   padding: 0;
@@ -366,13 +407,13 @@ body {
   @media only screen and (max-width: 59.375em) {
     .contact {
       font-size: 1.3rem; } }
-
-.label {
-  display: block;
-  font-size: 2rem; }
-  @media only screen and (max-width: 78.125em) {
-    .label {
-      font-size: 1.8rem; } }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__form {
+        width: 70%; } }
 
 .input {
   border: 1px solid red;
@@ -383,6 +424,9 @@ body {
   width: 100%;
   margin-bottom: 1rem; }
 
+.message__input {
+  height: 15rem; }
+
 /* Contact Submit Button DIV */
 .button__container {
   display: flex;
@@ -390,13 +434,11 @@ body {
   justify-content: center;
   padding: 1rem; }
 
-@media only screen and (max-width: 54.375em) {
-  .contact__form label {
-    font-size: 1.5rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  .contact__form label {
-    font-size: 1.21rem; } }
+.contact__form label {
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 54.375em) {
+    .contact__form label {
+      font-size: 1.5rem; } }
 
 /* Contact Submit Button */
 .submit__btn {
@@ -411,8 +453,6 @@ body {
   font-family: inherit;
   cursor: pointer;
   margin-top: 1rem; }
-  .submit__btn__message__input {
-    height: 10rem; }
 
 /* -----------------------FADE IN CONTENT------------ */
 .fade-in {
