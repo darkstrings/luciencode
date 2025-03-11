@@ -3,9 +3,6 @@
   border-radius: 1rem;
   border-bottom: var(--line);
   @media only screen and (max-width: $bp-large) {
-    padding: 3rem;
-  }
-  @media only screen and (max-width: $bp-large) {
     padding: 2rem;
   }
   @media only screen and (max-width: $bp-med) {
@@ -13,6 +10,18 @@
   }
   @media only screen and (max-width: $bp-sm) {
     padding: 1rem;
+  }
+}
+
+.content {
+  width: 90%;
+  flex: 0 0 100%;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 85%;
+  }
+  @media only screen and (max-width: $bp-med) {
+    width: 95%;
   }
 }
 
@@ -25,10 +34,10 @@
 }
 .about {
   border-bottom: var(--line);
+  margin-bottom: 5rem;
 }
 
 .navbar {
-  position: sticky;
   background-color: var(--bg-dark);
   top: 0;
   z-index: 1000;
@@ -38,7 +47,8 @@
   align-items: center;
   width: 100%;
   margin-bottom: 7rem;
-  @media only screen and (max-width: $bp-larger) {
+  border-bottom: var(--line);
+  @media only screen and (max-width: $bp-large) {
     flex-direction: column;
     margin-bottom: 2rem;
   }
@@ -52,7 +62,7 @@
   align-items: center;
   justify-content: end;
   width: 100%;
-  @media only screen and (max-width: $bp-larger) {
+  @media only screen and (max-width: $bp-large) {
     justify-content: center;
   }
 }
@@ -62,27 +72,40 @@
   justify-content: space-around;
 }
 
-.content {
-  width: 80%;
-  flex: 0 0 100%;
-  @media only screen and (max-width: $bp-large) {
-    width: 85%;
-  }
-  @media only screen and (max-width: $bp-med) {
-    width: 90%;
-  }
-  @media only screen and (max-width: $bp-sm) {
-    width: 95%;
-  }
-}
-
 /* works */
 
 .works {
-  background-color: var(--bg-dark);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+
+.works__links {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-wrap: wrap;
+  }
+  margin: 5rem 0;
+  @media only screen and (max-width: $bp-large) {
+    margin: 3rem 0;
+  }
+  height: 100%;
+
+  &__cont {
+    max-width: 300px; /* Adjust to your needs */
+    margin: 2rem;
+    @media only screen and (max-width: $bp-large) {
+      margin: 1rem;
+    }
+
+    border: var(--line);
+    border-radius: 1rem;
+    align-content: center;
+    padding: 2rem;
+  }
 }
 
 //////////////////////////////////////
@@ -95,6 +118,7 @@
 
 .contact__form {
   width: 30vw;
+  margin-bottom: 5rem;
 }
 
 // Copyright
