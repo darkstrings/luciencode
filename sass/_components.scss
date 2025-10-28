@@ -94,14 +94,16 @@
 
 .works__figure {
   &__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    display: block;
   }
 
   &__caption {
     text-align: center;
     font-size: 2rem;
+    padding: 1rem 0;
     @media only screen and (max-width: $bp-larger) {
       font-size: 1.5rem;
     }

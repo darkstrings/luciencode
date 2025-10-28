@@ -129,7 +129,7 @@ body {
     .works__links {
       margin: 3rem 0; } }
   .works__links__cont {
-    max-width: 300px;
+    width: 275px;
     /* Adjust to your needs */
     margin: 2rem;
     border: var(--line);
@@ -241,13 +241,15 @@ body {
         font-size: 1.2rem; } }
 
 .works__figure__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  display: block; }
 
 .works__figure__caption {
   text-align: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 1rem 0; }
   @media only screen and (max-width: 65.625em) {
     .works__figure__caption {
       font-size: 1.5rem; } }
