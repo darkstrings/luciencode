@@ -61,16 +61,13 @@
   &__paragraph {
     margin-bottom: 4rem;
     font-size: 3rem;
-    line-height: 1.4;
+    line-height: 1.7;
     letter-spacing: 0.2px;
     @media only screen and (max-width: $bp-largest) {
       font-size: 2.5rem;
     }
     @media only screen and (max-width: $bp-large) {
       font-size: 2rem;
-    }
-    @media only screen and (max-width: $bp-med) {
-      line-height: 1.1;
     }
     @media only screen and (max-width: $bp-sm) {
       font-size: 1.5rem;

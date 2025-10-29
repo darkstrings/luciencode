@@ -18,21 +18,20 @@ body {
   font-family: "Chakra Petch", sans-serif;
   background-color: black;
   color: red;
-  background-image: url("../public/img/black-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
 
 .link {
-  color: #47dc47;
+  color: #14a7d8;
   text-decoration: none;
   z-index: 3000; }
 
 .link:visited {
-  color: #198d19; }
+  color: #2b5de9; }
 
 .link:active {
-  color: #7dc832; }
+  color: #13798f; }
 
 .image-blur-edge {
   filter: drop-shadow(1rem 1rem 1rem #000000); }
@@ -42,6 +41,40 @@ body {
   cursor: pointer;
   background-color: var(--bg-dark);
   border: none; }
+
+.crt-body {
+  background-color: #000;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: inset 0 0 30px rgba(219, 53, 53, 0.2), inset 0 0 10px rgba(255, 0, 0, 0.1);
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  position: relative;
+  perspective: 1000px; }
+
+.crt-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(255, 0, 0, 0.1) 0%, transparent 30%);
+  pointer-events: none;
+  z-index: 1; }
+
+.crt-body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(to bottom, rgbargba(255, 0, 0, 0.05), rgbargba(255, 0, 0, 0.05) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+  z-index: 2; }
+
+body {
+  border-radius: 2rem; }
 
 .container {
   padding: 3rem;
@@ -212,7 +245,7 @@ body {
   .about__paragraph {
     margin-bottom: 4rem;
     font-size: 3rem;
-    line-height: 1.4;
+    line-height: 1.7;
     letter-spacing: 0.2px; }
     @media only screen and (max-width: 78.125em) {
       .about__paragraph {
@@ -220,9 +253,6 @@ body {
     @media only screen and (max-width: 59.375em) {
       .about__paragraph {
         font-size: 2rem; } }
-    @media only screen and (max-width: 54.375em) {
-      .about__paragraph {
-        line-height: 1.1; } }
     @media only screen and (max-width: 37.5em) {
       .about__paragraph {
         font-size: 1.5rem; } }
