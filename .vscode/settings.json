@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.includeItems": ["/sass/main.scss"],
+  "liveSassCompile.settings.excludeList": ["/node_modules/**", "/sass/**/_*"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ]
+}

@@ -25,6 +25,21 @@
   }
 }
 
+#tsparticles {
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+}
+
+#tsparticles canvas {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -5 !important;
+  pointer-events: none !important;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -110,7 +125,7 @@
 
 //////////////////////////////////////
 /// Contact
-///
+//
 
 .contact {
   padding: 2rem;
@@ -120,8 +135,6 @@
   width: 30vw;
   margin-bottom: 5rem;
 }
-
-// Copyright
 
 .bottom__bar {
   display: flex;
