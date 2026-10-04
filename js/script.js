@@ -1,107 +1,64 @@
-document.getElementById("contact-btn").onmouseover = function () {
-  this.classList.add("glitch");
-};
-document.getElementById("github-btn").onmouseover = function () {
-  this.classList.add("glitch");
-};
+// Footer year
+document.querySelectorAll(".year").forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
 
-document.getElementById("contact-btn").onmouseout = function () {
-  this.classList.remove("glitch");
-};
-document.getElementById("github-btn").onmouseout = function () {
-  this.classList.remove("glitch");
-};
-(async () => {
+// Particle background (skipped for people who prefer reduced motion)
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+async function initParticles() {
+  if (reduceMotion || typeof tsParticles === "undefined" || typeof loadSlim === "undefined") return;
+
   await loadSlim(tsParticles);
 
-  await tsParticles.load({
-    id: "tsparticles",
-    options: {
-      background: {
-        color: "#0a0004",
+  await tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: { color: "#0a0004" },
+    fpsLimit: 60,
+    detectRetina: true,
+
+    particles: {
+      number: { value: 80, density: { enable: true, area: 900 } },
+      color: { value: "#ff2a2a" },
+      shape: { type: "circle" },
+      opacity: { value: { min: 0.25, max: 0.6 } },
+      size: { value: { min: 1, max: 2.5 } },
+      links: {
+        enable: true,
+        distance: 140,
+        color: "#ff2a2a",
+        opacity: 0.3,
+        width: 1,
       },
-
-      particles: {
-        number: { value: 90 },
-        color: { value: "#ff2a2a" },
-        shape: { type: "circle" },
-
-        opacity: {
-          value: 0.6,
-        },
-
-        size: {
-          value: 2,
-          random: true,
-        },
-
-        links: {
-          enable: true,
-          distance: 140,
-          color: "#ff2a2a",
-          opacity: 0.35,
-          width: 1,
-        },
-
-        move: {
-          enable: true,
-          speed: 1.2,
-          direction: "none",
-          random: false,
-          straight: false,
-          outModes: "bounce",
-        },
+      move: {
+        enable: true,
+        speed: 1,
+        outModes: { default: "bounce" },
       },
-
-      interactivity: {
-        events: {
-          onhover: {
-            enable: true,
-            mode: "attract",
-          },
-          onclick: {
-            enable: false,
-          },
-        },
-
-        modes: {
-          attract: {
-            distance: 260,
-            duration: 0.6,
-            factor: 3.5,
-          },
-          move: {
-            speed: 0.9,
-          },
-          links: {
-            opacity: 0.5,
-          },
-        },
-      },
-
-      detectRetina: true,
-
-      // ⭐ MOBILE OVERRIDES
-      responsive: [
-        {
-          maxWidth: 600,
-          options: {
-            particles: {
-              number: { value: 40 }, // fewer particles
-              size: { value: 3 }, // slightly bigger
-              move: { speed: 2.2 }, // faster movement
-            },
-            interactivity: {
-              modes: {
-                attract: {
-                  distance: 180, // smaller attract radius
-                  duration: 0.4,
-                },
-              },
-            },
-          },
-        },
-      ],
     },
+
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "grab" },
+        resize: true,
+      },
+      modes: {
+        grab: { distance: 180, links: { opacity: 0.6 } },
+      },
+    },
+
+    responsive: [
+      {
+        maxWidth: 600,
+        options: {
+          particles: {
+            number: { value: 35 },
+            move: { speed: 1.6 },
+          },
+        },
+      },
+    ],
   });
-})();
+}
+
+window.addEventListener("DOMContentLoaded", initParticles);
