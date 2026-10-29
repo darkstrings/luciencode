@@ -50,38 +50,44 @@
 
   <main id="main" class="fade-in">
     <!-- Hero / about -->
-    <section class="hero container" id="top">
-      <h1 class="hero__title">
-        Lucien Gaydos
-        <span class="hero__role">Web &amp; Python Developer <span class="hero__role-sep" aria-hidden="true">//</span> Jr. Security Analyst in training</span>
-      </h1>
-      <p class="hero__lead">
-        I'm passionate about creating efficient, user-friendly web applications while also using AI tools efficiently and solving problems.
-        I'm also building hands-on cybersecurity skills on
-        <a href="https://tryhackme.com/p/darkstrings" class="link" target="_blank" rel="noopener">TryHackMe</a>
-        and looking for junior SOC / security analyst roles.
-      </p>
-      <ul class="tags" aria-label="Technologies">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>MongoDB</li>
-        <li>SQLite</li>
-        <li>PostgreSQL</li>
-      </ul>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#works">View my work</a>
-        <a class="btn" href="#contact">Get in touch</a>
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="container">
+        <h1 class="hero__name" id="hero-name">Lucien Gaydos</h1>
+      </div>
+
+      <div class="strings" aria-hidden="true">
+        <canvas class="strings__canvas"></canvas>
+      </div>
+
+      <div class="container hero__body">
+        <p class="hero__role">Web &amp; Python developer <span class="hero__role-sep" aria-hidden="true">//</span> Jr. security analyst in training</p>
+        <p class="hero__lead">
+          I'm passionate about creating efficient, user-friendly web applications while also using AI tools efficiently and solving problems.
+          I'm also building hands-on cybersecurity skills on
+          <a href="https://tryhackme.com/p/darkstrings" class="link" target="_blank" rel="noopener">TryHackMe</a>
+          and looking for junior SOC / security analyst roles.
+        </p>
+        <ul class="tags" aria-label="Technologies">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>MongoDB</li>
+          <li>SQLite</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#works">View my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
       </div>
     </section>
 
     <!-- Projects -->
     <section class="works container" id="works" aria-labelledby="works-title">
       <div class="section-head">
-        <p class="eyebrow">01 // projects</p>
         <h2 id="works-title" class="section-title">Selected work</h2>
         <p class="section-lead">
           Here are some examples of my skills so far. The code for all of these and more is on my
@@ -90,7 +96,6 @@
       </div>
 
       <aside class="notice" role="note">
-        <span class="notice__label">Heads up</span>
         <p>
           Some of these apps run on free tiers of MongoDB, Render and Netlify. If one has been idle for 15–30
           minutes it may take about 30 seconds to spin up. That's a one-time delay while the service wakes, not a
@@ -98,77 +103,72 @@
         </p>
       </aside>
 
-      <div class="cards">
-        <!-- PyVeJournal -->
-        <article class="card">
-          <a class="card__media" href="https://pyvejournal.onrender.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="public/img/screenshots/pyve.webp" alt="" loading="lazy" width="1024" height="1024">
-          </a>
-          <div class="card__body">
-            <h3 class="card__title">PyVeJournal</h3>
-            <p class="card__text">A blogging site made with Python, Flask and various other technologies.</p>
-            <ul class="tags tags--sm"><li>Python</li><li>Flask</li></ul>
-            <div class="card__links">
-              <a class="card__link" href="https://pyvejournal.onrender.com/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
-              <a class="card__link" href="https://github.com/darkstrings/pyvejournal/" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+      <div class="projects">
+        <article class="project">
+          <div class="project__body">
+            <h3 class="project__title">PyVeJournal</h3>
+            <p class="project__text">A blogging site made with Python, Flask and various other technologies.</p>
+            <ul class="tags tags--sm" aria-label="Built with"><li>Python</li><li>Flask</li></ul>
+            <div class="project__links">
+              <a class="project__link" href="https://pyvejournal.onrender.com/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+              <a class="project__link" href="https://github.com/darkstrings/pyvejournal/" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
             </div>
           </div>
+          <a class="project__media" href="https://pyvejournal.onrender.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="public/img/screenshots/pyve-site.webp" alt="" loading="lazy" width="1440" height="900">
+          </a>
         </article>
-
-        <!-- Atomicoffee -->
-        <article class="card">
-          <a class="card__media card__media--logo" href="https://atomicoffee.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="public/img/screenshots/atomicoffee-logo.webp" alt="" loading="lazy">
-          </a>
-          <div class="card__body">
-            <h3 class="card__title">Atomicoffee</h3>
-            <p class="card__text">A product site for an atomic coffee grinder.</p>
-            <div class="card__links">
-              <a class="card__link" href="https://atomicoffee.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
-              <a class="card__link" href="https://github.com/darkstrings/atomicoffee" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+        <article class="project">
+          <div class="project__body">
+            <h3 class="project__title">Atomicoffee</h3>
+            <p class="project__text">A product site for an atomic coffee grinder.</p>
+            <div class="project__links">
+              <a class="project__link" href="https://atomicoffee.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+              <a class="project__link" href="https://github.com/darkstrings/atomicoffee" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
             </div>
           </div>
+          <a class="project__media" href="https://atomicoffee.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="public/img/screenshots/atomicoffee-site.webp" alt="" loading="lazy" width="1440" height="900">
+          </a>
         </article>
-
-        <!-- TuneShed -->
-        <article class="card">
-          <a class="card__media card__media--logo" href="https://lucien-code-tune-shed.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="public/img/screenshots/tuneshed-logo.png" alt="" loading="lazy">
-          </a>
-          <div class="card__body">
-            <h3 class="card__title">TuneShed</h3>
-            <p class="card__text">A fictional site for music instrument sales made in React.</p>
-            <ul class="tags tags--sm"><li>React</li></ul>
-            <div class="card__links">
-              <a class="card__link" href="https://lucien-code-tune-shed.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
-              <a class="card__link" href="https://github.com/darkstrings/tune-shed" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+        <article class="project">
+          <div class="project__body">
+            <h3 class="project__title">TuneShed</h3>
+            <p class="project__text">A fictional site for music instrument sales made in React.</p>
+            <ul class="tags tags--sm" aria-label="Built with"><li>React</li></ul>
+            <div class="project__links">
+              <a class="project__link" href="https://lucien-code-tune-shed.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+              <a class="project__link" href="https://github.com/darkstrings/tune-shed" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
             </div>
           </div>
+          <a class="project__media" href="https://lucien-code-tune-shed.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="public/img/screenshots/tuneshed-site.webp" alt="" loading="lazy" width="1265" height="791">
+          </a>
         </article>
 
         <!-- Harder Rock (paused while moving to Firebase)
-        <article class="card">
-          <a class="card__media card__media--logo" href="https://harder-rock-hotel.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="public/img/screenshots/harder-rock-logo.webp" alt="" loading="lazy">
-          </a>
-          <div class="card__body">
-            <h3 class="card__title">Harder Rock Hotel</h3>
-            <p class="card__text">A site for a fictional rock-themed hotel made in React.</p>
-            <ul class="tags tags--sm"><li>React</li></ul>
-            <div class="card__links">
-              <a class="card__link" href="https://harder-rock-hotel.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
-              <a class="card__link" href="https://github.com/darkstrings/harder_rock" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+        <article class="project">
+          <div class="project__body">
+            <h3 class="project__title">Harder Rock Hotel</h3>
+            <p class="project__text">A site for a fictional rock-themed hotel made in React.</p>
+            <ul class="tags tags--sm" aria-label="Built with"><li>React</li></ul>
+            <div class="project__links">
+              <a class="project__link" href="https://harder-rock-hotel.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+              <a class="project__link" href="https://github.com/darkstrings/harder_rock" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
             </div>
           </div>
+          <a class="project__media" href="https://harder-rock-hotel.netlify.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="public/img/screenshots/harder-rock.png" alt="" loading="lazy" width="1898" height="881" style="object-position: top">
+          </a>
         </article>
         -->
+
       </div>
     </section>
 
     <!-- Contact -->
     <section class="contact container" id="contact" aria-labelledby="contact-title">
       <div class="section-head">
-        <p class="eyebrow">02 // contact</p>
         <h2 id="contact-title" class="section-title">Let's talk</h2>
         <p class="section-lead">
           Feel free to contact me with any questions, comments or to schedule an interview. Thank you for visiting!
